@@ -1,0 +1,15 @@
+.main {
+	/*keep things centered*/
+    max-width: 960px;
+    margin: auto;
+    
+}
+
+.header {
+	text-align: center;
+}
+
+.header h1 {
+	/*dark orange*/
+	color: #FFB852;
+}
