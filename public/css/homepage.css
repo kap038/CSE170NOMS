@@ -9,7 +9,7 @@
 }
 
 .header h1 {
-	/*dark orange*/
+	/*dark orange #FFB852*/
 	color: #FFB852;
 }
 .content {
@@ -21,8 +21,8 @@
 .top-container {
    padding: 20px;
 }
-.search-container {
- 
+.search-container input{
+  width: 100%;
 }
 
 .recipe-header {
