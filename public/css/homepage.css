@@ -12,3 +12,45 @@
 	/*dark orange*/
 	color: #FFB852;
 }
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-container {
+   padding: 20px;
+}
+.search-container {
+ 
+}
+
+.recipe-header {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.recipe-header p{
+  text-align: center;
+  color: white;
+  padding-top: 25px;
+}
+
+.top-recipes{
+  height: 50%;
+  border-radius: 25px;
+  background: #FFB852;
+}
+
+.small-recipes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.small-recipes a{
+  height: 50%;
+  border-radius: 25px;
+  background: #FFB852;
+  width: 33%;
+}
