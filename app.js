@@ -14,6 +14,7 @@ var pantrymap = require('./routes/pantrymap');
 var profile = require('./routes/profile');
 var recipe = require('./routes/recipe');
 var recipe_steps = require('./routes/recipe_steps');
+var search = require('./routes/search');
 // Example route
 // var user = require('./routes/user');
 
@@ -45,6 +46,7 @@ app.get('/pantrymap', pantrymap.view);
 app.get('/profile', profile.view);
 app.get('/recipe', recipe.view);
 app.get('/recipe/steps', recipe_steps.view);
+app.get('/search', search.view);
 // Example route
 // app.get('/users', user.list);
 
