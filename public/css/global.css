@@ -1,7 +1,8 @@
 .main {
   /*keep things centered*/
-    max-width: 960px;
+    max-width: 500px;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .header {
@@ -52,6 +53,7 @@
   font-size: 30px;
   width: 100%;
   text-align: center;
+  margin-right:30px;
 }
 .back-button {
   padding-top: 25px;
