@@ -44,3 +44,15 @@
   flex-direction: row;
   justify-content: center;
 }
+.header-back {
+  display: flex;
+  flex-direction: row;
+}
+.header-back h1 {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+.back-button {
+  padding-top: 25px;
+}
