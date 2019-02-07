@@ -47,6 +47,8 @@ app.get('/profile', profile.view);
 app.get('/recipe', recipe.view);
 app.get('/recipe/steps', recipe_steps.view);
 app.get('/search', search.view);
+app.get('/recipe/:name', recipe.view);
+
 // Example route
 // app.get('/users', user.list);
 

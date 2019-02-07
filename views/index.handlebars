@@ -34,58 +34,17 @@
 					</div>
 				</div>
 			</div>
-			<div id="recipes" class="recipe-list">
+
+			{{#each recipe-list}}
+			<div id={{id}} class="recipe-list">
 				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
+					<a href="recipe/{{name}}">
+					<h3>{{name}}</h3>
 					</a>
 				</div>
 			</div>
+			{{/each}}
+
 		</div>
 	</div>
 	<div class="footer">
@@ -98,5 +57,7 @@
 			</a>
 		</div>
 	</div>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
