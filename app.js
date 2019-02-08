@@ -9,8 +9,6 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var pantryfeed = require('./routes/pantryfeed');
-var pantrymap = require('./routes/pantrymap');
 var profile = require('./routes/profile');
 var recipe = require('./routes/recipe');
 var recipe_steps = require('./routes/recipe_steps');
@@ -43,8 +41,6 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
-app.get('/pantryfeed', pantryfeed.view);
-app.get('/pantrymap', pantrymap.view);
 app.get('/profile', profile.view);
 app.get('/recipe', recipe.view);
 app.get('/recipe/steps', recipe_steps.view);

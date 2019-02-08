@@ -21,58 +21,15 @@
 				</input>
 				</div>
 			</div>
+			{{#each recipe-list}}
 			<div id="recipes" class="recipe-list">
 				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
-					</a>
-				</div>
-				<div class="recipe">
-					<a href="recipe">
-					<h3> Recipe #1 </h3>
+					<a href="recipe/{{name}}">
+					<h3>{{name}}</h3>
 					</a>
 				</div>
 			</div>
+			{{/each}}
 		</div>
 	</div>
 	<div class="footer">
