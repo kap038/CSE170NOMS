@@ -5,21 +5,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/profile.css" rel="stylesheet">
+	<link href="/css/homepage.css" rel="stylesheet">
 	<link href="/css/global.css" rel="stylesheet">
+	<link href="/css/settings.css" rel="stylesheet">
 </head>
 <body>
-	<div class="header">
-		<h1>Profile</h1>
+	<div class="main">
+		<div class="header-back">
+			<a href="/" class="back-button">back</a>
+			<h1>Settings</h1>
+		</div>
+		<div>
+			{{#each setting-list}}
+			<div id={{id}} class="setting-list">
+				<div class="setting">
+					<h3>{{setting}} = 5</h3>
+				</div>
+			</div>
+			{{/each}}
+		</div>
 	</div>
-	<div class="choose-profile">
-		<a href="search">
-			<button>Recently Cooked</button>
-		</a>
-		<a href="settings">
-			<button>Settings</button>
-		</a>
-	</div> 
 	<div class="footer">
 		<div class="buttons">
 			<a href="/">
