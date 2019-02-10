@@ -54,11 +54,10 @@
 
 .recipe {
   width: 100%;
-  height: 100px;
+  height: 500px;
   /*background: #FFB852;*/
   margin-top: 10px;
   border: 2px;
   border-color: black;
   border-style: solid;
 }
-

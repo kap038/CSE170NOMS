@@ -21,12 +21,16 @@
 				</input>
 				</div>
 			</div>
-			{{#each recipe-list}}
-			<div id="recipes" class="recipe-list">
+			{{#each recipes}}
+			<div id={{id}} class="recipe-list">
 				<div class="recipe">
 					<a href="recipe/{{name}}">
 					<h3>{{name}}</h3>
+					<img src={{imageURL}} class="img-responsive">
+					<p>Difficulty:{{difficulty}}</p>
+					<p>Time:{{time}}</p>
 					</a>
+					<hr>
 				</div>
 			</div>
 			{{/each}}

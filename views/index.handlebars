@@ -11,7 +11,7 @@
 <body>
 	<div class="main">
 		<div class="header">
-			<h1>Mamas</h1>
+			<h1>NOMS</h1>
 		</div>
 		<div class="content">
 			<div class="top-container">
@@ -35,12 +35,16 @@
 				</div>
 			</div>
 
-			{{#each recipe-list}}
+			{{#each recipes}}
 			<div id={{id}} class="recipe-list">
 				<div class="recipe">
 					<a href="recipe/{{name}}">
 					<h3>{{name}}</h3>
+					<img src={{imageURL}} class="img-responsive">
+					<p>Difficulty: {{difficulty}}</p>
+					<p>Time: {{time}}</p>
 					</a>
+					<hr>
 				</div>
 			</div>
 			{{/each}}
