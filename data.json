@@ -5,12 +5,15 @@
 			"id": "recipe1",
 			"difficulty": "easy",
 			"time": "5 minutes",
-			"servingsize": 1,
+			"servingsize": 2,
 			"ingredients": [
 				"4 eggs",
 				"1/4 cup milk",
 				"2 tsp butter",
 				"salt and pepper"
+			],
+			"allergies":[
+				"dairy"
 			],
 			"instructions": [
 				"Beat eggs, milk, salt and pepper in medium bowl until blended.",
@@ -34,6 +37,10 @@
 				"3 large eggs",
 				"1 tsp vanilla",
 				"1/4 cup all-purpose flour"
+			],
+			"allergies":[
+				"tree nuts",
+				"dairy"
 			],
 			"instructions": [
 				"Heat oven to 400°F.",
@@ -61,6 +68,10 @@
 				"⅔ cup all-purpose flour",
 				"2 large eggs, room temperature"
 			],
+			"allergies":[
+				"tree nuts",
+				"dairy"
+			],
 			"instructions": [
 				"BEAT eggs, milk, salt and pepper in medium bowl until blended.",
 				"HEAT butter in large nonstick skillet over medium heat until hot.",
@@ -80,6 +91,10 @@
 				"1 Tbsp. unsalted butter, room temperature",
 				"⅔ cup all-purpose flour",
 				"2 large eggs, room temperature"
+			],
+			"allergies":[
+				"tree nuts",
+				"dairy"
 			],
 			"instructions": [
 				"BEAT eggs, milk, salt and pepper in medium bowl until blended.",
@@ -101,6 +116,10 @@
 				"⅔ cup all-purpose flour",
 				"2 large eggs, room temperature"
 			],
+			"allergies":[
+				"tree nuts",
+				"dairy"
+			],
 			"instructions": [
 				"BEAT eggs, milk, salt and pepper in medium bowl until blended.",
 				"HEAT butter in large nonstick skillet over medium heat until hot.",
@@ -121,6 +140,10 @@
 				"⅔ cup all-purpose flour",
 				"2 large eggs, room temperature"
 			],
+			"allergies":[
+				"tree nuts",
+				"dairy"
+			],
 			"instructions": [
 				"BEAT eggs, milk, salt and pepper in medium bowl until blended.",
 				"HEAT butter in large nonstick skillet over medium heat until hot.",
@@ -140,6 +163,10 @@
 				"1 Tbsp. unsalted butter, room temperature",
 				"⅔ cup all-purpose flour",
 				"2 large eggs, room temperature"
+			],
+			"allergies":[
+				"tree nuts",
+				"dairy"
 			],
 			"instructions": [
 				"BEAT eggs, milk, salt and pepper in medium bowl until blended.",
