@@ -8,7 +8,7 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/index');
+var homepage = require('./routes/homepage');
 var profile = require('./routes/profile');
 var recipe = require('./routes/recipe');
 var recipe_steps = require('./routes/recipe_steps');
@@ -40,13 +40,13 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/', login.view);
 app.get('/profile', profile.view);
 app.get('/recipe', recipe.view);
 app.get('/recipe/steps', recipe_steps.view);
 app.get('/search', search.view);
 app.get('/recipe/:name', recipe.view);
-app.get('/login', login.view);
+app.get('/homepage', homepage.view);
 app.get('/settings', settings.view);
 
 // Example route
