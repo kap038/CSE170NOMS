@@ -38,7 +38,7 @@
 			{{#each recipes}}
 			<div id={{id}} class="recipe-list">
 				<div class="recipe">
-					<a href="recipe/{{name}}">
+					<a href="recipe/{{name}}" id={{id}} class="recipe-link">
 					<h3>{{name}}</h3>
 					<img src={{imageURL}} class="img-responsive">
 					<p>Difficulty: {{difficulty}}</p>
@@ -51,6 +51,7 @@
 
 		</div>
 	</div>
+
 	<div class="footer">
 		<div class="buttons">
 			<a href="/">
@@ -63,5 +64,6 @@
 	</div>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/homepage.js"></script>
 </body>
 </html>
