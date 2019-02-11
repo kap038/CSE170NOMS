@@ -9,10 +9,33 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+	/*
 	console.log("Javascript connected!");
-	$("a.recipe-link").click(projectClick);
+	$.getJSON("data.json", function(json){
+		console.log(data)
+  		//renderRecipes();
+		//$("a.recipe-link").click(projectClick);
+	});*/
+	
 }
 
+/*
+function renderRecipes(){
+	{{#each recipes}}
+			<div id={{id}} class="recipe-list">
+				<div class="recipe">
+					<a class="recipe-link" id={{id}} href="recipe/{{name}}">
+					<h3>{{name}}</h3>
+					<img src={{imageURL}} class="img-responsive">
+					<p>Difficulty: {{difficulty}}</p>
+					<p>Time: {{time}}</p>
+					</a>
+					<hr>
+				</div>
+			</div>
+			{{/each}}
+
+} */
 function projectClick(e){
 	// prevent the page from reloading      
     //e.preventDefault();

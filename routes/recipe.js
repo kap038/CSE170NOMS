@@ -4,10 +4,20 @@ exports.view = function(req, res){
 
   var name = req.params.name; 
   console.log("The recipe name is: " + name);
-  console.log(data.recipes[0])
+
+  //loop thru and find the recipe matching this name
+  index = 0;
+  for(i = 0; i < data.recipes.length; i++){
+  	if(data.recipes[i].name == name){
+  		index = i;
+  		break
+  	}
+  }
+
+  console.log(data.recipes[index])
   res.render('recipe', {
     'recipeName': name,
-    'recipe': data.recipes[0]
+    'recipe': data.recipes[index]
   });
 };
 

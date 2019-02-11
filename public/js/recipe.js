@@ -10,9 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
-	var ingredients = localStorage.getItem("curr_recipe").ingredients;
 	console.log(ingredients);
-
 
 }
  
