@@ -14,7 +14,6 @@ var recipe = require('./routes/recipe');
 var recipe_steps = require('./routes/recipe_steps');
 var search = require('./routes/search');
 var login = require('./routes/login');
-var createprofile = require('./routes/createprofile');
 var settings = require('./routes/settings');
 // Example route
 // var user = require('./routes/user');
@@ -48,7 +47,6 @@ app.get('/recipe/steps', recipe_steps.view);
 app.get('/search', search.view);
 app.get('/recipe/:name', recipe.view);
 app.get('/login', login.view);
-app.get('/createprofile', createprofile.view);
 app.get('/settings', settings.view);
 
 // Example route
