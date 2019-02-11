@@ -15,7 +15,7 @@ function initializePage() {
 
 function projectClick(e){
 	// prevent the page from reloading      
-    e.preventDefault();
+    //e.preventDefault();
     var recipeId = $(this).attr('id');
     console.log(recipeId)
 	if (typeof(Storage) !== "undefined") {
