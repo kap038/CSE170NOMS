@@ -5,19 +5,49 @@
 .header h1 {
 	color: black;
 }
-.choose-profile
-{
-	margin:100px;
-	padding: 40px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
+
+.accountinfo {
+	margin-top: 10px;
+	height: 150px;
+  display: flex;
+	flex-direction: row;
 	border-radius: 25px;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
 }
-.profbutton
-{
-  	display: flex;
-  	flex-direction: row;
+
+.accountinfo img{
+	border-radius: 50%;
+	display:flex;
+	flex-grow: 2;
+	height: auto;
+  width: auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.accounttext{
+	margin-left: auto;
+	flex-grow:3;
+}
+
+.profilebuttons {
+	margin-top: 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  /*background: #FFB852;*/
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+.profbutton {
+	display: flex;
+	flex-direction: row;
 	text-align: center;
 	border-style: solid;
 	border-width: 1px;
