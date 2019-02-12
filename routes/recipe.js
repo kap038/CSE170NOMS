@@ -13,11 +13,14 @@ exports.view = function(req, res){
   		break
   	}
   }
+  //index = recipe number
 
-  console.log(data.recipes[index])
+  console.log(data.recipes[index]);
   res.render('recipe', {
     'recipeName': name,
-    'recipe': data.recipes[index]
+    'recipe': data.recipes[index],
+    'ingredients': data.recipes[index].ingredients,  //list of ingredients
+    'instructions':data.recipes[index].instructions  //list of instructions
   });
 };
 

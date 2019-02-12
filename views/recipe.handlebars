@@ -42,12 +42,15 @@
 				</div>
 			</div>
 			<ul class="ingredients">
-				<li>{{recipe.ingredients}}</li>
-			
+			{{#each ingredients}}
+				<li>{{ingredient}}</li>
+			{{/each}}
 			</ul>
 			<h3>Instructions</h3>
 			<ol>
-				<li>{{recipe.instructions}}</li>
+				{{#each instructions}}
+				<li>{{instruction}}</li>
+				{{/each}}
 			</ol>
 		</div>
 		</div>
