@@ -16,19 +16,45 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.servings-container {
-  padding-top: 25px;
-  margin-right: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.servings-container p{
-  margin-right:10px;
-}
-.servings-container select {
 
+/* Dropdown button*/
+.dropdown button{
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: relative;
 }
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
 
 .lists {
 	margin-left: 10px;

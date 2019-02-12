@@ -15,11 +15,14 @@ exports.view = function(req, res){
   }
   //index = recipe number
 
-  console.log(data.recipes[index]);
+  console.log(data.recipes[index].normalingredients);
   res.render('recipe', {
     'recipeName': name,
     'recipe': data.recipes[index],
-    'ingredients': data.recipes[index].ingredients,  //list of ingredients
+    'normalingredients': data.recipes[index].normalingredients, //list of normal ingredients
+    'glutenfreeingredients': data.recipes[index].glutenfreeingredients, //list of gluten free ingredients
+    'veganingredients': data.recipes[index].veganingredients, //list of normal ingredients
+    'nutfreeingredients': data.recipes[index].nutfreeingredients, //list of gluten free ingredients
     'instructions':data.recipes[index].instructions  //list of instructions
   });
 };

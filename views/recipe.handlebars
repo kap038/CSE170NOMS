@@ -30,19 +30,18 @@
 		<div class="lists">
 			<div class="ingredients-content">
 				<h3>Ingredients</h3>
-				<div class="servings-container">
-					<p>Serving size: </p>
-					<select>
-						<option>1/2</option>
-						<option selected="selected">1</option>
-					 	<option>2</option>
-					  	<option>3</option>
-					  	<option>4</option>
-					</select>
+				<div class="dropdown">
+					<button onclick="clickDropdown()" class="dropbtn">Dietary Restrictions</button>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="#">None</a>
+						<a href="#">Vegan</a>
+						<a href="#">Nut free</a>
+						<a href="#">Gluten Free</a>
+					</div>
 				</div>
 			</div>
 			<ul class="ingredients">
-			{{#each ingredients}}
+			{{#each normalingredients}}
 				<li>{{ingredient}}</li>
 			{{/each}}
 			</ul>
