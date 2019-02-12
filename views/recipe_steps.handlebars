@@ -13,12 +13,15 @@
 	<div class="body">
 		<div class="header-back">
 			<a href="/recipe" class="back-button">exit</a>
-			<h1>Step 1: Whisk Egg Yolks</h1>
+			<h1>Step {{step}}:{{instruction}}</h1>
 		</div>
 		<div class="info-content">
-			<img src="/images/spaghetti.jpg"/>
+			<img src="{{recipe.imageURL}}"/>
 		</div>
 		<div class="start">
+			<a href="{{nextStep}}">
+			<button>Next</button>
+			</a>
 		</div>
 		<div class="lists">
 			<div class="ingredients-content">
@@ -39,7 +42,7 @@
 			</ul>
 			<h3>Instructions</h3>
 			<ol>
-				<li>Whisk egg yolks.</li>
+				<li>{{instruction}}</li>
 			</ol>
 		</div>
 		</div>
