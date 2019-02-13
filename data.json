@@ -6,29 +6,40 @@
 			"difficulty": "easy",
 			"time": "5 minutes",
 			"servingsize": 2,
-			"normalingredients": [
-				{"ingredient":"4 eggs"},
-				{"ingredient":"1/4 cup milk"},
-				{"ingredient":"2 tsp butter"},
-				{"ingredient":"salt and pepper"}
-			],
-			"veganingredients": [
-				{"ingredient":"4 vegan eggs"},
-				{"ingredient":"1/4 cup vegan milk"},
-				{"ingredient":"2 tsp vegan butter"},
-				{"ingredient":"salt and pepper"}
-			],
-			"nutfreeingredients": [
-				{"ingredient":"4 nutfreeeggs"},
-				{"ingredient":"1/4 cup nutfree milk"},
-				{"ingredient":"2 tsp butter"},
-				{"ingredient":"salt and pepper"}
-			],
-			"glutenfreeingredients": [
-				{"ingredient":"4 glutenfree eggs"},
-				{"ingredient":"1/4 cup glutenfree milk"},
-				{"ingredient":"2 tsp glutenfree butter"},
-				{"ingredient":"salt and pepper"}
+
+			"ingredients": [
+				{	"name": "regular",
+					"ingredients": [
+					{"ingredient":"4 eggs"},
+					{"ingredient":"1/4 cup milk"},
+					{"ingredient":"2 tsp butter"},
+					{"ingredient":"salt and pepper"}
+				] },
+
+				{	"name": "vegan",
+					"ingredients": [
+					{"ingredient":"4 vegan eggs"},
+					{"ingredient":"1/4 cup vegan milk"},
+					{"ingredient":"2 tsp vegan butter"},
+					{"ingredient":"salt and pepper"}
+				] },
+
+				{	"name": "nutfree",
+					"ingredients": [
+					{"ingredient":"4 nutfreeeggs"},
+					{"ingredient":"1/4 cup nutfree milk"},
+					{"ingredient":"2 tsp butter"},
+					{"ingredient":"salt and pepper"}
+				] },
+
+				{   "name": "glutenfree",
+					"ingredients": [
+					{"ingredient":"4 glutenfree eggs"},
+					{"ingredient":"1/4 cup glutenfree milk"},
+					{"ingredient":"2 tsp glutenfree butter"},
+					{"ingredient":"salt and pepper"}
+					] 
+				}
 			],
 			"allergies":[
 				{"allergy":"dairy"}

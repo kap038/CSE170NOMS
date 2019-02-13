@@ -1,5 +1,4 @@
 'use strict';
-
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
@@ -11,7 +10,8 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
   $("button.dropbtn").click(clickDropdown);
-  $("#vegan").click(clickVegan);
+ //child elements of this class
+  $(".dropdown-content > a").click(handleSelect);
 }
 
 // when dropdown button clicked, show and hide content
@@ -20,19 +20,35 @@ function clickDropdown(e){
 	document.getElementById("myDropdown").classList.toggle("show");
 }
 
-function clickVegan(e){
+function handleSelect(e){
   e.preventDefault();
-  var ingredients = $(this).attr('value');
-  //ingredients = JSON.parse(ingredients);
-  ingredients = JSON.parse(ingredients);
-   
-  var i;
-  for(i = 0; i < ingredients.length; i++){
-    console.log("ingredient: "+ingredients[i].ingredient);
-  }
-  console.log("Ingredients: "+ingredients);
-  console.log("clicked vegan") 
+  var type = $(this).attr('id');
+  console.log(type);
+
+  var idNumber = 0;
+  var url = "/json/"+idNumber;
+  console.log(url);
+
+  //render the corresponding ingredients
+  $.get(url, function(result) {
+    console.log(JSON.stringify(result));
+
+    var recipe = result;
+    var diet = recipe.instructions[0]; //default to first type if no JSON exists for this diet
+    var i;
+    //find which type this is
+    for(i = 0; i < recipe.instructions.length; i++) {
+      if (recipe.instructions[i].name == type) {
+        diet = recipe.instructions[i].name;
+      }
+    }
+    console.log(diet);
+
+    
+
+  });
 }
+
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
@@ -47,3 +63,5 @@ window.onclick = function(event) {
     }
   }
 }
+
+

@@ -48,6 +48,7 @@ app.get('/search', search.view);
 app.get('/recipe/:name', recipe.view);
 app.get('/homepage', homepage.view);
 app.get('/settings', settings.view);
+app.get('/json/:id', recipe.recipeJson);
 
 // Example route
 // app.get('/users', user.list);

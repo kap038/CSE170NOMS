@@ -14,27 +14,27 @@ exports.view = function(req, res){
   	}
   }
   //index = recipe number
-  stringed = JSON.stringify(data.recipes[index].normalingredients);
-  console.log("Stringed: "+stringed);
   res.render('recipe', {
     'recipeName': name,
     'recipe': data.recipes[index],
-    'ingredients-string-reg': stringed,
+    'instructions':data.recipes[index].instructions,
+    'ingredients': data.recipes[index].ingredients,
+    'defaultIngredients': data.recipes[index].ingredients[0].ingredients //change this index based on user given pref 
+  });
+};
+
+/**
+'ingredients-string-reg': stringed,
     'normalingredients': data.recipes[index].normalingredients, //list of normal ingredients
     'glutenfreeingredients': data.recipes[index].glutenfreeingredients, //list of gluten free ingredients
     'veganingredients': data.recipes[index].veganingredients, //list of normal ingredients
     'nutfreeingredients': data.recipes[index].nutfreeingredients, //list of gluten free ingredients
     'instructions':data.recipes[index].instructions  //list of instructions
-  });
-};
+**/
 
-/*
-// Check browser support
-if (typeof(Storage) !== "undefined") {
-  // Store
-  localStorage.setItem("lastname", "Smith");
-  // Retrieve
-  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
-} else {
-  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-}*/
+//render the json
+exports.recipeJson = function(req, res) { 
+  var id = req.params.id;
+  var recipe = data.recipes[id]; // of by one, our first project has index 0
+  res.json(recipe);
+}

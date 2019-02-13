@@ -34,14 +34,14 @@
 					<button class="dropbtn">Dietary Restrictions</button>
 					<div id="myDropdown" class="dropdown-content">
 						<a id="none" href="#">None</a>
-						<a id="vegan" value='{{ingredients-string-reg}}'>{{ingredients-string-reg}}</a>
+						<a id="vegan">Vegan</a>
 						<a id="nutfree" href="#">Nut free</a>
 						<a id="glutfree" href="#">Gluten Free</a>
 					</div>
 				</div>
 			</div>
 			<ul class="ingredients">
-			{{#each normalingredients}}
+			{{#each defaultIngredients}}
 				<li>{{ingredient}}</li>
 			{{/each}}
 			</ul>
