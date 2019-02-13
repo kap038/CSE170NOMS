@@ -34,16 +34,17 @@ function handleSelect(e){
     console.log(JSON.stringify(result));
 
     var recipe = result;
-    var diet = recipe.instructions[0]; //default to first type if no JSON exists for this diet
+    var dietIndex = 0; //default to first type if no JSON exists for this diet
     var i;
     //find which type this is
-    for(i = 0; i < recipe.instructions.length; i++) {
-      if (recipe.instructions[i].name == type) {
-        diet = recipe.instructions[i].name;
+    for(i = 0; i < recipe.ingredients.length; i++) {
+      if (recipe.ingredients[i].name == type) {
+        dietIndex = i;
       }
     }
-    console.log(diet);
-
+    var ingredients = recipe.ingredients[dietIndex].ingredients;
+    console.log(JSON.stringify(ingredients))
+    $("ul.ingredients").text(JSON.stringify(ingredients));
     
 
   });
