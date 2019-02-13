@@ -14,11 +14,12 @@ exports.view = function(req, res){
   	}
   }
   //index = recipe number
-
-  console.log(data.recipes[index].normalingredients);
+  stringed = JSON.stringify(data.recipes[index].normalingredients);
+  console.log("Stringed: "+stringed);
   res.render('recipe', {
     'recipeName': name,
     'recipe': data.recipes[index],
+    'ingredients-string-reg': stringed,
     'normalingredients': data.recipes[index].normalingredients, //list of normal ingredients
     'glutenfreeingredients': data.recipes[index].glutenfreeingredients, //list of gluten free ingredients
     'veganingredients': data.recipes[index].veganingredients, //list of normal ingredients

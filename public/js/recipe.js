@@ -10,11 +10,28 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+  $("button.dropbtn").click(clickDropdown);
+  $("#vegan").click(clickVegan);
 }
 
 // when dropdown button clicked, show and hide content
-function clickDropdown(){
+function clickDropdown(e){
+  e.preventDefault();
 	document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function clickVegan(e){
+  e.preventDefault();
+  var ingredients = $(this).attr('value');
+  //ingredients = JSON.parse(ingredients);
+  ingredients = JSON.parse(ingredients);
+   
+  var i;
+  for(i = 0; i < ingredients.length; i++){
+    console.log("ingredient: "+ingredients[i].ingredient);
+  }
+  console.log("Ingredients: "+ingredients);
+  console.log("clicked vegan") 
 }
 
 // Close the dropdown if the user clicks outside of it

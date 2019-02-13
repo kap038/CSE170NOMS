@@ -4,6 +4,8 @@ exports.view = function(req, res){
   var name = req.params.name;
   console.log(step);
   console.log(name);
+  data_string = JSON.stringify(data.recipes[index]);
+  console.log(data_string);
   
   //loop thru and find the recipe matching this name
   index = 0;
