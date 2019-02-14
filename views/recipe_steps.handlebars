@@ -13,29 +13,14 @@
 	<div class="body">
 		<div class="header-back">
 			<a href="/recipe/{{recipe.id}}" class="back-button">exit</a>
-			<h1>Step {{step}}:{{instruction}}</h1>
+			<h1>Step {{step}}</h1>
 		</div>
 		<div class="info-content">
 			<img src="{{recipe.imageURL}}"/>
 		</div>
-		<div class="start">
-			<a href="{{nextUrl}}">
-			<button>Next</button>
-			</a>
-		</div>
 		<div class="lists">
 			<div class="ingredients-content">
 				<h3>Ingredients</h3>
-				<div class="servings-container">
-					<p>Serving size: </p>
-					<select>
-						<option>1/2</option>
-						<option selected="selected">1</option>
-					 	<option>2</option>
-					  	<option>3</option>
-					  	<option>4</option>
-					</select>
-				</div>
 			</div>
 			<ul>
 				<li>4 eggs</li>
@@ -49,10 +34,10 @@
 		<div class="footer">
 			<div class="buttons">
 				<a href="{{prevUrl}}">
-					<button > Previous </button>
+					<button>Previous</button>
 				</a>
-				<a href="/homepage">
-					<button> Finish </button>
+				<a href="{{nextUrl}}">
+					<button>Next</button>
 				</a>
 			</div>
 		</div>
