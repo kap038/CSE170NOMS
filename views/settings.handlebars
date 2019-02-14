@@ -17,9 +17,13 @@
 		</div>
 		<div>
 			{{#each setting-list}}
-			<div id={{id}} class="setting-list">
-				<div class="setting">
-					<h3>{{setting}} = 5</h3>
+			<div class="dropdown-settings">
+				<button class="dropbtn">{{setting}}</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#">normal</a>
+					<a href="#">vegan</a>
+					<a href="#">nutfree</a>
+					<a href="#">glutenfree</a>
 				</div>
 			</div>
 			{{/each}}
@@ -35,5 +39,10 @@
 			</a>
 		</div>
 	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/search.js"></script>
+
 </body>
 </html>
