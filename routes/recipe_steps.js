@@ -2,9 +2,7 @@ var data = require('../data.json');
 exports.view = function(req, res){
   var step = parseInt(req.params.step);
   var name = req.params.name;
-  console.log(step);
-  console.log(name);
-  
+
   //loop thru and find the recipe matching this name
   index = 0;
   for(i = 0; i < data.recipes.length; i++){
@@ -13,15 +11,31 @@ exports.view = function(req, res){
   		break
   	}
   }
-  //index = recipe number
-  //console.log(data.recipes[index]);
+  
+  var recipe = data.recipes[index];
+  var prevUrl = "/recipe/"+recipe.id+"/"+(step-1);
+  var nextUrl = "/recipe/"+recipe.id+"/"+(step+1);
+
+  //if prevUrl would go out of bounds, take back to overview page
+  if(step <= 1) {
+     prevUrl = "/recipe/"+recipe.id;
+  }
+  //after recipe completion take user to homepage
+  if(step+1 > recipe.instructions.length) {
+     nextUrl = "/homepage";
+  }
+
+  console.log(prevUrl);
   res.render('recipe_steps', {
-    'recipeName': name,
+    'recipeName': recipe.name,
     'step': step,
+    'prevStep': step-1,
     'nextStep': 1+step,
-    'recipe': data.recipes[index],
-    'ingredients': data.recipes[index].ingredients,  //list of ingredients
-    'instruction':data.recipes[index].instructions[step-1].instruction  //list of instructions
+    'prevUrl': prevUrl,
+    'nextUrl': nextUrl,
+    'recipe': recipe,
+    'ingredients': recipe.ingredients,  //list of ingredients
+    'instruction':recipe.instructions[step-1].instruction  //list of instructions
   });
 };
 

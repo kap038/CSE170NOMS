@@ -15,7 +15,7 @@ exports.view = function(req, res){
   }
   //index = recipe number
   res.render('recipe', {
-    'recipeName': name,
+    'recipeName': data.recipes[index].name,
     'recipe': data.recipes[index],
     'instructions':data.recipes[index].instructions,
     'ingredients': data.recipes[index].ingredients,
