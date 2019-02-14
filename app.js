@@ -43,10 +43,8 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 app.get('/profile', profile.view);
 app.get('/recipe', recipe.view);
-app.get('/recipe/:name/:step', recipe_steps.view);
 app.get('/recipe/:id/:step', recipe_steps.view);
 app.get('/search', search.view);
-app.get('/recipe/:name', recipe.view);
 app.get('/recipe/:id', recipe.view);
 app.get('/homepage', homepage.view);
 app.get('/settings', settings.view);

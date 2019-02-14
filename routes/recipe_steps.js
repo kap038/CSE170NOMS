@@ -1,12 +1,12 @@
 var data = require('../data.json');
 exports.view = function(req, res){
   var step = parseInt(req.params.step);
-  var name = req.params.name;
+  var id = req.params.id;
 
   //loop thru and find the recipe matching this name
   index = 0;
   for(i = 0; i < data.recipes.length; i++){
-  	if(data.recipes[i].name == name){
+  	if(data.recipes[i].id == id){
   		index = i;
   		break
   	}
