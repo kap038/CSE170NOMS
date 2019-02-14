@@ -2,7 +2,7 @@ var data = require('../data.json');
 
 exports.view = function(req, res){
 
-  var name = req.params.name; 
+  var name = req.params.name;
   console.log("The recipe name is: " + name);
 
   //loop thru and find the recipe matching this name
@@ -14,12 +14,14 @@ exports.view = function(req, res){
   	}
   }
   //index = recipe number
+
+
   res.render('recipe', {
     'recipeName': data.recipes[index].name,
     'recipe': data.recipes[index],
     'instructions':data.recipes[index].instructions,
     'ingredients': data.recipes[index].ingredients,
-    'defaultIngredients': data.recipes[index].ingredients[0].ingredients //change this index based on user given pref 
+    'defaultIngredients': data.recipes[index].ingredients[0].ingredients //change this index based on user given pref
   });
 };
 

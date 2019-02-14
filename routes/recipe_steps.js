@@ -11,7 +11,7 @@ exports.view = function(req, res){
   		break
   	}
   }
-  
+
   var recipe = data.recipes[index];
   var prevUrl = "/recipe/"+recipe.id+"/"+(step-1);
   var nextUrl = "/recipe/"+recipe.id+"/"+(step+1);
@@ -20,9 +20,9 @@ exports.view = function(req, res){
   if(step <= 1) {
      prevUrl = "/recipe/"+recipe.id;
   }
-  //after recipe completion take user to homepage
+  //after recipe completion take user to overview page
   if(step+1 > recipe.instructions.length) {
-     nextUrl = "/homepage";
+     nextUrl = "/recipe/"+recipe.id;
   }
 
   console.log(prevUrl);
@@ -38,4 +38,3 @@ exports.view = function(req, res){
     'instruction':recipe.instructions[step-1].instruction  //list of instructions
   });
 };
-
