@@ -15,6 +15,7 @@ var recipe_steps = require('./routes/recipe_steps');
 var search = require('./routes/search');
 var login = require('./routes/login');
 var settings = require('./routes/settings');
+var signup = require('./routes/signup');
 // Example route
 // var user = require('./routes/user');
 
@@ -48,6 +49,7 @@ app.get('/search', search.view);
 app.get('/recipe/:id', recipe.view);
 app.get('/homepage', homepage.view);
 app.get('/settings', settings.view);
+app.get('/signup', signup.view);
 app.get('/json/:id', recipe.recipeJson);
 
 // Example route
