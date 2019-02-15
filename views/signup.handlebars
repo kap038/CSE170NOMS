@@ -29,24 +29,35 @@
                         </input>
                     </div>
 
-                    <div class="input-container" id="height">
+                    <!-- <div class="input-container" id="height">
                         <label>Height:</label>
                         <input type="number" name="heightFt" placeholder="5" min="0">
                         </input>ft.
                         <input type="number" name="heightIn" placeholder="17" min="0">
                         </input>in.
-                    </div>
+                    </div> -->
 
-                    <div class="input-container" id="weight">
-                        <label>Weight:</label>
-                        <input type="number" name="weight" placeholder="12" min="0">
-                        </input>lbs
-                    </div>
 
-                    <div class="input-container" id=restriction>
+                    <div class="input-container" id="restriction">
                          <label>Any Dietary Restrictions?</label>
-                         <input type="radio" name="restriction" value="yes"> Yes
-                         <input type="radio" name="restriction" value="no"> No
+                         <input type="radio" name="restriction" value="vegan"> None
+                         <input type="radio" name="restriction" value="nutfree"> Nut free
+												 <input type="radio" name="restriction" value="vegan"> Vegan
+                         <input type="radio" name="restriction" value="nutfree"> Gluten free
+                    </div>
+
+										<div class="input-container" id="allergies">
+                         <label>Any Allergies?</label>
+                         <input type="radio" name="restriction" value="vegan"> None
+                         <input type="radio" name="restriction" value="nutfree"> Tree nuts
+												 <input type="radio" name="restriction" value="vegan"> Seafood
+                         <input type="radio" name="restriction" value="nutfree"> Dairy
+                    </div>
+
+										<div class="input-container" id="spice">
+                        <label>Spice Tolerance:</label>
+                        <input type="number" name="spice" placeholder="5" min="0" max="10">
+												</input>
                     </div>
 
                     <div class="buttons">
