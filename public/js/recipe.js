@@ -61,11 +61,11 @@ function handleSelect(e){
 
 			if (i == 0){
 			//$("ul.ingredients li").change(ingredients[i].ingredient);
-				$("ul.ingredients").text(ingredients[i].ingredient);
+				$("ul.ingredients").html("<li>"+ingredients[i].ingredient+"</li>");
 			}
 			else{
-				$("ul.ingredients").text();
-				$("ul.ingredients").append(ingredients[i].ingredient);
+				//$("ul.ingredients").text();
+				$("ul.ingredients").append("<li>"+ingredients[i].ingredient+"</li>");
 			}
 		}
 
