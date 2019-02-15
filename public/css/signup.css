@@ -1,0 +1,59 @@
+.signup-container
+{
+	margin:20px;
+	padding: 20px;
+    max-width: 500px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 25px;
+}
+
+.input-container input
+{
+	width: 8%;
+}
+
+::placeholder
+{
+    color: #DCDCDC;
+}
+#username,#password
+{
+    width: 270%;
+}
+
+.new-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
+
+#signup-button
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button
+{
+    background-color: orange;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-size: 16;
+}
+label
+{
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}​
+input[type="radio"]{
+    margin: 0px 10px 0px 0px;
+}
