@@ -26,7 +26,7 @@
 
 				{	"name": "nutfree",
 					"ingredients": [
-					{"ingredient":"4 nutfreeeggs"},
+					{"ingredient":"4 nutfree eggs"},
 					{"ingredient":"1/4 cup nutfree milk"},
 					{"ingredient":"2 tsp butter"},
 					{"ingredient":"salt and pepper"}
@@ -34,9 +34,9 @@
 
 				{ "name": "glutenfree",
 					"ingredients": [
-					{"ingredient":"4 glutenfree eggs"},
-					{"ingredient":"1/4 cup glutenfree milk"},
-					{"ingredient":"2 tsp glutenfree butter"},
+					{"ingredient":"4 gluten free eggs"},
+					{"ingredient":"1/4 cup gluten free milk"},
+					{"ingredient":"2 tsp gluten free butter"},
 					{"ingredient":"salt and pepper"}
 					]
 				}
@@ -127,39 +127,75 @@
 			"imageURL": "https://img1.southernliving.timeinc.net/sites/default/files/styles/medium_2x/public/image/2015/12/main/fo_6e04178a77ea2af1_spcms.jpg?itok=DDgamLKJ",
 			"id": "recipe3",
 			"difficulty": "hard",
-			"time": "2 hours",
-			"servingsize": 1,
+			"time": "35 minutes",
+			"servingsize": 8,
 			"ingredients": [
 				{	"name": "regular",
 					"ingredients": [
-					{"ingredient":"4 eggs"},
-					{"ingredient":"1/4 cup milk"},
-					{"ingredient":"2 tsp butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"1 pie crust"},
+					{"ingredient":"1/2 cup flaked sweetened coconut"},
+					{"ingredient":"1 1/2 cups coconut milk"},
+					{"ingredient":"1 1/2 cups half-and-half"},
+					{"ingredient":"1/2 cup flaked sweetened coconut"},
+					{"ingredient":"5 egg yolks"},
+					{"ingredient":"3/4 cup sugar"}
+					{"ingredient":"4 tablespoons cornstarch"},
+					{"ingredient":"1 tablespoon butter"},
+					{"ingredient":"1/4 teaspoon salt"},
+					{"ingredient":"1 1/2 cups flaked sweetened coconut"},
+					{"ingredient":"1/2 teaspoon vanilla"},
+					{"ingredient":"whipped cream"}
 				] },
 
 				{	"name": "vegan",
 					"ingredients": [
-					{"ingredient":"4 vegan eggs"},
-					{"ingredient":"1/4 cup vegan milk"},
-					{"ingredient":"2 tsp vegan butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"1 pie vegan crust"},
+					{"ingredient":"1/2 cup flaked sweetened coconut"},
+					{"ingredient":"1 1/2 cups vegan coconut milk"},
+					{"ingredient":"1 1/2 cups vegan half-and-half"},
+					{"ingredient":"1/2 cup flaked sweetened coconut"},
+					{"ingredient":"5 egg vegan yolks"},
+					{"ingredient":"3/4 cup sugar"}
+					{"ingredient":"4 tablespoons cornstarch"},
+					{"ingredient":"1 tablespoon vegan butter"},
+					{"ingredient":"1/4 teaspoon salt"},
+					{"ingredient":"1 1/2 cups flaked sweetened coconut"},
+					{"ingredient":"1/2 teaspoon vanilla"},
+					{"ingredient":"whipped cream"}
 				] },
 
 				{	"name": "nutfree",
 					"ingredients": [
-					{"ingredient":"4 nutfreeeggs"},
-					{"ingredient":"1/4 cup nutfree milk"},
-					{"ingredient":"2 tsp butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"1 pie nut free crust"},
+					{"ingredient":"1/2 cup flaked sweetened coconut"},
+					{"ingredient":"1 1/2 cups nut free coconut milk"},
+					{"ingredient":"1 1/2 cups half-and-half"},
+					{"ingredient":"1/2 cup flaked sweetened coconut"},
+					{"ingredient":"5 egg yolks"},
+					{"ingredient":"3/4 cup sugar"}
+					{"ingredient":"4 tablespoons cornstarch"},
+					{"ingredient":"1 tablespoon butter"},
+					{"ingredient":"1/4 teaspoon salt"},
+					{"ingredient":"1 1/2 cups flaked sweetened coconut"},
+					{"ingredient":"1/2 teaspoon vanilla"},
+					{"ingredient":"whipped cream"}
 				] },
 
-				{   "name": "glutenfree",
+				{"name": "glutenfree",
 					"ingredients": [
-					{"ingredient":"4 glutenfree eggs"},
-					{"ingredient":"1/4 cup glutenfree milk"},
-					{"ingredient":"2 tsp glutenfree butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"1 pie gluten free crust"},
+					{"ingredient":"1/2 cup flaked sweetened coconut"},
+					{"ingredient":"1 1/2 cups gluten free coconut milk"},
+					{"ingredient":"1 1/2 cups half-and-half"},
+					{"ingredient":"1/2 cup flaked sweetened coconut"},
+					{"ingredient":"5 egg yolks"},
+					{"ingredient":"3/4 cup sugar"}
+					{"ingredient":"4 tablespoons cornstarch"},
+					{"ingredient":"1 tablespoon butter"},
+					{"ingredient":"1/4 teaspoon salt"},
+					{"ingredient":"1 1/2 cups flaked sweetened coconut"},
+					{"ingredient":"1/2 teaspoon vanilla"},
+					{"ingredient":"whipped cream"}
 					]
 				}
 			],
@@ -168,11 +204,18 @@
 				{"allergy":"tree nuts"}
 			],
 			"instructions": [
-				{"instruction": "Beat eggs, milk, salt and pepper in medium bowl until blended."},
-				{"instruction": "Heat butter in large nonstick skillet over medium heat until hot."},
-				{"instruction": "Pour in egg mixture. As eggs begin to set, Gently pull the eggs across the pan with a spatula, forming large soft curds."},
-				{"instruction": "Continue cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly."},
-				{"instruction": "Remove from heat and serve immediately."}
+				{"instruction": "Prepare pie crust according to its baking instructions."},
+				{"instruction": "Spread coconut evenly on a rimmed baking sheet."},
+				{"instruction": "Place into 350º F oven for 8-10 minutes until coconut has just begun to turn brown. Set aside to cool."},
+				{"instruction": "Pour coconut milk and half-and-half into a liquid measuring cup.Add egg yolks and whisk together with milks. Set aside."},
+				{"instruction": "Add sugar and cornstarch to a heavy-bottomed saucepan over medium-low heat.
+												Whisk egg and milk mixture together once more and then slowly begin to add to the sugar and cornstarch,
+												whisking together constantly."},
+				{"instruction": "Bring custard mixture to a boil. Switch to a rubber spatula or wooden spoon and continue to stir constantly. Boil one minute."},
+				{"instruction": "Remove from heat and add butter, coconut, vanilla and salt."},
+				{"instruction": "Spread custard into pie crust. Cover lightly with plastic wrap and chill in the refrigerator until set, about 30-45 minutes."},
+				{"instruction": "Spread whipped cream on top of coconut custard. Refrigerate until ready to serve."},
+				{"instruction": "When ready to serve, top with toasted coconut."},
 			]
 		},
 		{ "name": "Grilled Salmon with Lemon Sauce",
