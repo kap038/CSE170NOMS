@@ -36,6 +36,12 @@ exports.view = function(req, res){
 //render the json
 exports.recipeJson = function(req, res) { 
   var id = req.params.id;
-  var recipe = data.recipes[id]; // of by one, our first project has index 0
+  var recipe = data.recipes[id];
+  res.json(recipe);
+}
+
+//render the json
+exports.allJson = function(req, res) { 
+  var recipe = data.recipes;
   res.json(recipe);
 }

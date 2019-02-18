@@ -51,6 +51,7 @@ app.get('/homepage', homepage.view);
 app.get('/settings', settings.view);
 app.get('/signup', signup.view);
 app.get('/json/:id', recipe.recipeJson);
+app.get('/json/', recipe.allJson);
 
 // Example route
 // app.get('/users', user.list);
