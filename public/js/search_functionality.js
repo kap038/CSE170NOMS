@@ -34,24 +34,30 @@ function handleSearch(e) {
   			}
   		}
 
-  		//render matching results
-  		for(i = 0; i < matches.length; i++){
-  			//$("ul.ingredients").html("<li>"+matches[i].ingredient+"</li>");
-  			var match = matches[i];
-  			var html = '<div id='+match.id+' class="recipe-list">'+
-				'<div class="recipe">'+
-					'<a class="recipe-link" id='+match.id+'href="recipe/'+match.id+'">'+
-					'<h3>'+match.name+'</h3>'+
-					'<img src='+match.imageURL+' class="img-responsive">'+
-					'<p>Difficulty: '+match.difficulty+'</p>'+
-					'<p>Time: '+match.time+'</p> </a> <hr> </div> </div>'
+  		if(matches.length == 0){
+  			var html = "<div>Sorry, no matches found.</div>";
+  			$("#available-recipes").html(html);
+  		} else {
 
-			//first item needs to replace existing html
-  			if(i == 0) {
-  				$("#available-recipes").html(html);
-  			} else {
-  				$("#available-recipes").append(html);
-  			}
+	  		//render matching results
+	  		for(i = 0; i < matches.length; i++){
+	  			//$("ul.ingredients").html("<li>"+matches[i].ingredient+"</li>");
+	  			var match = matches[i];
+	  			var html = '<div id='+match.id+' class="recipe-list">'+
+					'<div class="recipe">'+
+						'<a class="recipe-link" id='+match.id+'href="recipe/'+match.id+'">'+
+						'<h3>'+match.name+'</h3>'+
+						'<img src='+match.imageURL+' class="img-responsive">'+
+						'<p>Difficulty: '+match.difficulty+'</p>'+
+						'<p>Time: '+match.time+'</p> </a> <hr> </div> </div>'
+
+				//first item needs to replace existing html
+	  			if(i == 0) {
+	  				$("#available-recipes").html(html);
+	  			} else {
+	  				$("#available-recipes").append(html);
+	  			}
+	  		}
   		}
 
   		console.log(matches)
