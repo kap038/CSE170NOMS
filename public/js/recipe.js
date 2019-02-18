@@ -57,14 +57,13 @@ function handleSelect(e){
 		//   );
 		// });
 
+    //change html to display dietary ingredients
 		for(i = 0; i < recipe.ingredients.length; i++) {
 
 			if (i == 0){
-			//$("ul.ingredients li").change(ingredients[i].ingredient);
 				$("ul.ingredients").html("<li>"+ingredients[i].ingredient+"</li>");
 			}
 			else{
-				//$("ul.ingredients").text();
 				$("ul.ingredients").append("<li>"+ingredients[i].ingredient+"</li>");
 			}
 		}
