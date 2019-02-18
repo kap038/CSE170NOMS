@@ -36,19 +36,22 @@
 				</div>
 			</div>
 
-			{{#each recipes}}
-			<div id={{id}} class="recipe-list">
-				<div class="recipe">
-					<a class="recipe-link" id={{id}} href="recipe/{{id}}">
-					<h3>{{name}}</h3>
-					<img src={{imageURL}} class="img-responsive">
-					<p>Difficulty: {{difficulty}}</p>
-					<p>Time: {{time}}</p>
-					</a>
-					<hr>
+			<div id="available-recipes">
+				{{#each recipes}}
+				<div id={{id}} class="recipe-list">
+					<div class="recipe">
+						<a class="recipe-link" id={{id}} href="recipe/{{id}}">
+						<h3>{{name}}</h3>
+						<img src={{imageURL}} class="img-responsive">
+						<p>Difficulty: {{difficulty}}</p>
+						<p>Time: {{time}}</p>
+						</a>
+						<hr>
+					</div>
 				</div>
+				{{/each}}
 			</div>
-			{{/each}}
+			
 
 		</div>
 	</div>
