@@ -8,6 +8,25 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
 	$('#searchform').submit(handleSearch);
+	$('#foryou').click(handleForYou);
+}
+
+function handleForYou(e){
+	e.preventDefault();
+	var input = localStorage.getItem("diet")
+	console.log(input)
+
+	//get the json of all recipes
+	var url = "/json/"
+  	$.get(url, function(result) {
+		//console.log(JSON.stringify(result));
+  		var matches = getMatches(input, result);
+
+  		//add any recipes that match the user's keyword
+ 		displayList(matches)
+
+  	});
+
 }
 
 //change displayed recipes to match search results
@@ -22,23 +41,36 @@ function handleSearch(e) {
 	var url = "/json/"
   	$.get(url, function(result) {
 		//console.log(JSON.stringify(result));
-  		var recipes = result;
-  		var matches = [];
+  		var matches = getMatches(input, result);
 
   		//add any recipes that match the user's keyword
-  		var i;
-  		for(i = 0; i < recipes.length; i++) {
-  			var strName = JSON.stringify(recipes[i].name).toLowerCase();
-  			if(strName.includes(input)){
-  				matches.push(recipes[i])
-  			}
-  		}
+ 		displayList(matches)
 
-  		if(matches.length == 0){
+  	});
+}
+
+//find recipes that match user's input. Input json to search thru.
+function getMatches(input, json) {
+	var recipes = json;
+	var matches = [];
+	var i;
+	for(i = 0; i < recipes.length; i++) {
+		var strName = JSON.stringify(recipes[i].name).toLowerCase();
+		//check name and tags
+		if(strName.includes(input) || recipes[i].tags.includes(input)){
+			matches.push(recipes[i])
+		}
+	}
+	return matches;
+}
+
+//display a given array of recipes matching category
+function displayList(matches){
+	 		if(matches.length == 0){
   			var html = "<div>Sorry, no matches found.</div>";
   			$("#available-recipes").html(html);
   		} else {
-
+  			var i;
 	  		//render matching results
 	  		for(i = 0; i < matches.length; i++){
 	  			//$("ul.ingredients").html("<li>"+matches[i].ingredient+"</li>");
@@ -59,10 +91,6 @@ function handleSearch(e) {
 	  			}
 	  		}
   		}
-
-  		console.log(matches)
-
-  	});
 }
 
 /*

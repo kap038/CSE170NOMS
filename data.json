@@ -6,7 +6,7 @@
 			"difficulty": "easy",
 			"time": "5 minutes",
 			"servingsize": 2,
-
+			"tags": ["nutfree", "glutenfree"],
 			"ingredients": [
 				{	"name": "regular",
 					"ingredients": [
@@ -58,6 +58,7 @@
 			"difficulty": "hard",
 			"time": "2 hours",
 			"servingsize": 4,
+			"tags": ["vegan"],
 			"ingredients": [
 
 				{	"name": "regular",
@@ -129,6 +130,7 @@
 			"difficulty": "hard",
 			"time": "35 minutes",
 			"servingsize": 8,
+			"tags": [],
 			"ingredients": [
 				{	"name": "regular",
 					"ingredients": [
@@ -222,6 +224,7 @@
 			"difficulty": "hard",
 			"time": "2 hours",
 			"servingsize": 1,
+			"tags": ["nutfree", "glutenfree"],
 			"ingredients": [
 				{	"name": "regular",
 					"ingredients": [
@@ -274,6 +277,7 @@
 			"difficulty": "hard",
 			"time": "2 hours",
 			"servingsize": 1,
+			"tags": ["nutfree", "vegan"],
 			"ingredients": [
 				{	"name": "regular",
 					"ingredients": [
@@ -326,6 +330,7 @@
 			"difficulty": "hard",
 			"time": "2 hours",
 			"servingsize": 1,
+			"tags": ["nutfree", "vegan"],
 			"ingredients": [
 				{	"name": "regular",
 					"ingredients": [
@@ -378,6 +383,7 @@
 			"difficulty": "hard",
 			"time": "2 hours",
 			"servingsize": 1,
+			"tags": ["nutfree", "vegan"],
 			"ingredients": [
 				{	"name": "regular",
 					"ingredients": [
