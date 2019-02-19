@@ -6,7 +6,7 @@ exports.view = function(req, res){
   res.render('settings', {
   	'setting-list': [
   	{ 'setting': 'Allergies',
-      'id':'set1',
+      'id':'allergy',
   	  'options': [
         {'option': 'peanut'},
         {'option': 'nut'},
@@ -15,7 +15,13 @@ exports.view = function(req, res){
       ]
   	},
   	{ 'setting': 'Dietary Restrictions',
-  	  'id': 'set2'
+  	  'id': 'dietary',
+      'options': [
+        {'option': 'normal'},
+        {'option': 'vegan'},
+        {'option': 'nutfree'},
+        {'option': 'glutenfree'}
+      ]
   	},
   	{ 'setting': 'Spice Preference',
   	  'id': 'set3'

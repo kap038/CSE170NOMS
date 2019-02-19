@@ -18,12 +18,11 @@
 		<div>
 			{{#each setting-list}}
 			<div class="dropdown-settings">
-				<button class="dropbtn">{{setting}}</button>
-				<div id="myDropdown" class="dropdown-content">
-					<a href="#">normal</a>
-					<a href="#">vegan</a>
-					<a href="#">nutfree</a>
-					<a href="#">glutenfree</a>
+				<button id="{{id}}" class="dropbtn">{{setting}}</button>
+				<div id="{{id}}" class="dropdown-content">
+					{{#each options}}
+					<a id ="{{option}}" href="#">{{option}}</a>
+					{{/each}}
 				</div>
 			</div>
 			{{/each}}
@@ -42,7 +41,7 @@
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.js"></script>
-	<script src="/js/search.js"></script>
+	<script src="/js/settings.js"></script>
 
 </body>
 </html>
