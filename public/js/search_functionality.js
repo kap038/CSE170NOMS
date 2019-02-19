@@ -51,9 +51,17 @@ function handleSearch(e) {
 
 //find recipes that match user's input. Input json to search thru.
 function getMatches(input, json) {
+
+
 	var recipes = json;
 	var matches = [];
 	var i;
+
+	//all recipes have normal
+	if(input === "normal"){
+		return recipes;
+	}
+
 	for(i = 0; i < recipes.length; i++) {
 		var strName = JSON.stringify(recipes[i].name).toLowerCase();
 		//check name and tags
