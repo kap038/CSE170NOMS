@@ -7,8 +7,14 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/login.css" rel="stylesheet">
 	<link href="/css/global.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 </head>
 <body>
+
 	<div class="header">
 		<h1>Start Cooking!</h1>
 	</div>
@@ -31,6 +37,11 @@
 				<button>Sign Up</button>
 			</a>
 		</div>
+		<p class="fb login">
+			Or login through Facebook
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+		</fb:login-button>
+		</p>
 	</div>
 	<div class="footer">
 		<div class="buttons">
