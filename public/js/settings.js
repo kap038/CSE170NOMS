@@ -23,7 +23,8 @@ function clickDropdown(e){
 
 function handleSelect(e){
   e.preventDefault();
-  console.log(this)
+  var choice = this.id;
+  localStorage.setItem("diet", choice);
 }
 
 
