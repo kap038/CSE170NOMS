@@ -55,7 +55,7 @@ exports.complete = function(req, res){
   var recipe = data.recipes[index];
   var step = recipe.instructions.length;
   var prevUrl = "/recipe/"+recipe.id+"/"+(step);
-
+  
   res.render('complete', {
     'recipe': recipe, 
     'prevUrl': prevUrl

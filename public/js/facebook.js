@@ -1,3 +1,7 @@
+$(document).ready(function() {
+  localStorage.clear();
+})
+
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);

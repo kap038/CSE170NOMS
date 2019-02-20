@@ -9,6 +9,7 @@ function initializePage() {
 	console.log("Javascript connected!");
 	$('#searchform').submit(handleSearch);
 	$('#foryou').click(handleForYou);
+	$('#completed').click(handleCompleted);
 }
 
 function handleForYou(e){
@@ -26,6 +27,31 @@ function handleForYou(e){
  		displayList(matches)
 
   	});
+
+}
+
+function handleCompleted(e){
+	e.preventDefault();
+	var input = (localStorage.getItem("completed") || '[]'); //if null, init to []
+
+
+	//get the json of all recipes
+	
+	var url = "/json/"
+  	$.get(url, function(result) {
+		//add corresponding recipes to match the names
+		var i;
+		var matches = []
+		for(i = 0; i < result.length; i++){
+			if(input.includes(result[i].id)) {
+				matches.push(result[i]);
+			}
+		}
+		console.log(matches)
+  		//add any recipes that match the user's keyword
+ 		displayList(matches)
+
+  	}); 
 
 }
 
