@@ -12,6 +12,7 @@
 	<script src="/js/bootstrap.min.js"></script>
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
+	<script src="/js/login.js"></script>
 </head>
 <body>
 
@@ -37,8 +38,15 @@
 				<button>Sign Up</button>
 			</a>
 		</div>
+		<div class="start-cooking">
+			<h1>Facebook login successful.</h1>
+			<a href="homepage">
+				<button>Start Cooking!</button>
+			</a>
+
+		</div>
 		<p class="fblogin">
-			Or login through Facebook
+			Login through Facebook
 			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 		</fb:login-button>
 		</p>
