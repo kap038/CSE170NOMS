@@ -15,17 +15,17 @@
 		<div class="header-back">
 			<a href="/homepage" class="back-button">back</a>
 				<h1>{{recipeName}}</h1>
-				<h1>{{recipe.time}}</h1>
+				<a id="{{recipe.id}}" class="favorites-button">
+					<img src="/images/star-empty.png" class="favorites-button"></img>
+				</a>
 		</div>
-
 
 		<div class="info-content">
 			<img src="{{recipe.imageURL}}"/>
 		</div>
+		<p>Time needed: {{recipe.time}}</p>
 		<div class="start">
-			<a href="{{recipe.id}}/1">
-				<button> Start </button>
-			</a>
+			<a href="{{recipe.id}}/1"><button> Start </button></a>
 		</div>
 		<div class="lists">
 			<div class="ingredients-content">
@@ -67,6 +67,7 @@
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.js"></script>
+	<script src="/js/favorites.js"></script>
 	<script src="/js/recipe.js"></script>
 
 <!--

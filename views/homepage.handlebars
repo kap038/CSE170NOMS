@@ -41,13 +41,15 @@
 				<div id={{id}} class="recipe-list">
 					<div class="recipe">
 						<a class="recipe-link" id="{{id}}" href="recipe/{{id}}">
-						<h3>{{name}}</h3>
-						<img src={{imageURL}} class="img-responsive">
-						<p>Difficulty: {{difficulty}}</p>
-						<p>Time: {{time}}</p>
-						{{#each tags}}
-						<p>{{this}} </p>
-						{{/each}}
+							<h3>
+								{{name}}
+							</h3>
+							<img src={{imageURL}} class="img-responsive">
+							<p>Difficulty: {{difficulty}}</p>
+							<p>Time: {{time}}</p>
+							{{#each tags}}
+								<p>{{this}} </p>
+							{{/each}}
 						</a>
 						<hr>
 					</div>

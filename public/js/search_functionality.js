@@ -10,6 +10,31 @@ function initializePage() {
 	$('#searchform').submit(handleSearch);
 	$('#foryou').click(handleForYou);
 	$('#completed').click(handleCompleted);
+	$('#favorites').click(handleFavorites);
+}
+
+
+function handleFavorites(e){
+	e.preventDefault();
+	var input = (localStorage.getItem("favorites") || '[]'); //if null, init to []
+
+	//get the json of all recipes
+	
+	var url = "/json/"
+  	$.get(url, function(result) {
+		//add corresponding recipes to match the names
+		var i;
+		var matches = []
+		for(i = 0; i < result.length; i++){
+			if(input.includes(result[i].id)) {
+				matches.push(result[i]);
+			}
+		}
+		console.log(matches)
+  		//add any recipes that match the user's keyword
+ 		displayList(matches)
+
+  	}); 
 }
 
 function handleForYou(e){

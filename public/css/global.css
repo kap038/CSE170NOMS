@@ -15,6 +15,16 @@
   /*dark orange #FFB852*/
 
 }
+.favorites-button{
+      margin: 10px;
+      margin-left: 0px;
+
+}
+.favorites-button img{
+  width: 25px;
+  height: 25px;
+
+}
 
 .footer {
   position: fixed;
