@@ -3,6 +3,8 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+	//hide back button
+	$('.backbutton').hide();
 })
 
 function initializePage() {
@@ -14,6 +16,10 @@ function initializePage() {
 
 function handleForYou(e){
 	e.preventDefault();
+
+	//show back button
+	$('.backbutton').show();
+
 	var input = localStorage.getItem("diet")
 	console.log(input)
 
@@ -34,9 +40,11 @@ function handleCompleted(e){
 	e.preventDefault();
 	var input = (localStorage.getItem("completed") || '[]'); //if null, init to []
 
+	//show back button
+	$('.backbutton').show();
 
 	//get the json of all recipes
-	
+
 	var url = "/json/"
   	$.get(url, function(result) {
 		//add corresponding recipes to match the names
@@ -51,13 +59,17 @@ function handleCompleted(e){
   		//add any recipes that match the user's keyword
  		displayList(matches)
 
-  	}); 
+  	});
 
 }
 
 //change displayed recipes to match search results
 function handleSearch(e) {
 	e.preventDefault();
+
+	//show back button
+	$('.backbutton').show();
+
 	var input = $('input#searchbox').val();
 	//case insensitive
 	input = input.toLowerCase();
