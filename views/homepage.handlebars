@@ -11,27 +11,28 @@
 <body>
 	<div class="main">
 		<div class="header">
+			<div class="backbutton">
+				<a href="homepage">
+					<button>See all recipes</button>
+				</a>
+			</div>
 			<img src="https://66.media.tumblr.com/4e82fa9adf240bd0540cf488232e384e/tumblr_pmy7g45QJj1smv45oo1_1280.png" alt="Noms logo" id="logo">
 		</div>
 		<div class="content">
 			<div class="top-container">
 				<div class="search-container">
 					<form id="searchform">
-						<input id="searchbox" type="text" placeholder="Search for recipes">
+						<input id="searchbox" type="text" placeholder="Search for recipes or dietary restrictions">
 						<input type="submit"/>
 					</form>
 				</input>
 				</div>
 				<div class="recipe-header">
-					<div class="top-recipes">
-						<a href="/homepage">
-							<p>This week's top recipes</p>
-						</a>
-					</div>
+
 					<div class="small-recipes">
-						<a id="foryou"><p>For you</p></a>
-						<a id="favorites"><p>Favorites</p></a>
-						<a id="completed"><p>Completed</p></a>
+						<a id="foryou"><p>For your diet</p></a>
+						<a id="favorites"><p>Favorite Recipes</p></a>
+						<a id="completed"><p>Completed Recipes</p></a>
 					</div>
 				</div>
 			</div>
@@ -56,7 +57,7 @@
 				</div>
 				{{/each}}
 			</div>
-			
+
 
 		</div>
 	</div>
