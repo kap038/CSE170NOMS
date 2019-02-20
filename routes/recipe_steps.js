@@ -35,7 +35,8 @@ exports.view = function(req, res){
     'nextUrl': nextUrl,
     'recipe': recipe,
     'ingredients': recipe.ingredients,  //list of ingredients
-    'instruction':recipe.instructions[step-1].instruction  //list of instructions
+    'instruction':recipe.instructions[step-1].instruction,  //list of instructions
+    'total-steps': recipe.instructions.length
   });
 };
 

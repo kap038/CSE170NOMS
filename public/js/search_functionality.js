@@ -111,7 +111,7 @@ function displayList(matches){
 	  			var match = matches[i];
 	  			var html = '<div id='+match.id+' class="recipe-list">'+
 					'<div class="recipe">'+
-						'<a class="recipe-link" id='+match.id+'href="recipe/'+match.id+'">'+
+						'<a class="recipe-link" id="'+match.id+'" href="recipe/'+match.id+'">'+
 						'<h3>'+match.name+'</h3>'+
 						'<img src='+match.imageURL+' class="img-responsive">'+
 						'<p>Difficulty: '+match.difficulty+'</p>'+
