@@ -45,6 +45,9 @@
 						<img src={{imageURL}} class="img-responsive">
 						<p>Difficulty: {{difficulty}}</p>
 						<p>Time: {{time}}</p>
+						{{#each tags}}
+						<p>{{this}} </p>
+						{{/each}}
 						</a>
 						<hr>
 					</div>
