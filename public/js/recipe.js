@@ -84,6 +84,8 @@ function handleSelect(e){
       }
    }
 
+    //change start url
+  $("a#start-button").attr("href", recipe.id+"/"+type+"/1");
   });
 }
 
