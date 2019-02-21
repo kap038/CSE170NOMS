@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  localStorage.clear();
   localStorage.setItem("diet", "normal"); //by default normal pref
 })
 
@@ -26,11 +25,22 @@ function statusChangeCallback(response) {
 function changeUser(response) {
   //Add code to change name and image
   console.log(response)
+  //login page
   $(".signup-container").hide();
   $(".input-container").hide();
   $(".fblogin").hide();
   $(".start-cooking").show();
+
+  //profile page
+  var picture = response.picture.data.url;
+  var name = response.name;
+
+  localStorage.setItem("picture", picture);
+  localStorage.setItem("name", name);
+  console.log(localStorage.getItem("name"));
+
+  $("#photo").attr("src", picture);
+  $("#name").text(name);
   // $("#name").text(response.name);
   // $("#photo").attr("src", response.picture.data.url);
-  // $(".fblogin").load("/homepage");  //need to change
 }

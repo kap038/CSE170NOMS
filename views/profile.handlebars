@@ -14,9 +14,12 @@
 	</div>
 
 	<div class="accountinfo">
-		<img src="https://img1.mashed.com/img/gallery/easy-dishes-that-make-you-seem-like-a-professional-chef/intro.jpg">
+		<div id="facebookPhoto" class="profile">
+			<img id="photo" class='img-responsive' src="http://hci.stanford.edu/courses/cs547/Resources/Pictures/klemmer_grad.jpg" />
+		</div>
+
 		<div class="accounttext">
-			<h1>Bob</h1>
+			<h1 id="name">Bob</h1>
 			<p>Recently cooked: Scrambled Eggs</p>
 		</div>
 	</div>
@@ -43,9 +46,7 @@
 				<a id ="glutenfree" href="#">Gluten Free</a>
 			</div>
 		</div>
-
 	</div>
-
 
 	<div class="footer">
 		<div class="buttons">
@@ -57,10 +58,14 @@
 			</a>
 		</div>
 	</div>
+
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 	<script src="/js/profile.js"></script>
-	<script src="/js/search_functionality.js"></script>
+
+
 
 </body>
 </html>

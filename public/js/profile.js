@@ -12,13 +12,30 @@ function initializePage() {
   $("button.dropbtn").click(clickDropdown);
  //child elements of this class
   $(".dropdown-content > a").click(handleSelect);
+
+  verifyFbLogin();
+
+}
+
+function verifyFbLogin(){
+  //fb account info
+  var name = localStorage.getItem("name");
+  var picture = localStorage.getItem("picture");
+
+  console.log(name);
+  console.log(picture);
+
+  if(name!=null && picture!= null){
+    $("#photo").attr("src", picture);
+    $("#name").text(name);
+  }
 }
 
 // when dropdown button clicked, show and hide content
 function clickDropdown(e){
     e.preventDefault();
     var id = this.id;
-    $("#"+id+".dropdown-content").toggle()
+    $("#"+id+".dropdown-content").toggle();
 }
 
 function handleSelect(e){
@@ -27,7 +44,6 @@ function handleSelect(e){
   localStorage.setItem("diet", choice);
 
   $(".dropdown-settings .dropbtn").text("Dietary Restrictions: " + $(this).text());
-
 
   console.log("Dietary restriction saved!");
   console.log($(this).text());

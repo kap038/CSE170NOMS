@@ -1,5 +1,6 @@
 $(document).ready(function() {
   initializePage();
+  localStorage.clear();
 })
 
 function initializePage() {
