@@ -18,6 +18,7 @@ function initializePage() {
 
 function handleFavorites(e){
 	e.preventDefault();
+
 	var input = (localStorage.getItem("favorites") || '[]'); //if null, init to []
 
 	//show back button
@@ -72,6 +73,7 @@ function handleForYou(e){
 
 function handleCompleted(e){
 	e.preventDefault();
+
 	var input = (localStorage.getItem("completed") || '[]'); //if null, init to []
 
 	//show back button
