@@ -55,7 +55,35 @@ function handleSelect(e){
 			}
 		}
 
+    var instructions = [];
+    for(i = 0; i < recipe.instructions.length; i++){
 
+      //find an alternative instruction matching mode
+      var alt = (recipe.instructions[i].alt) || '[]'
+      //search alts for thing to add
+      var j;
+      var found = false;
+      for(j = 0; j < alt.length; j++){
+        if(alt[j].name === type){
+          instructions.push(alt[j].instruction)
+          found = true;
+        }
+      }
+      if(!found){
+         instructions.push(recipe.instructions[i].instruction)
+      }
+    }
+
+    //render instructions
+    for(i = 0; i < instructions.length; i++) {
+
+      if (i == 0){
+        $("ol.instructions").html("<li>"+instructions[i]+"</li>");
+      }
+      else{
+        $("ol.instructions").append("<li>"+instructions[i]+"</li>");
+      }
+   }
 
   });
 }

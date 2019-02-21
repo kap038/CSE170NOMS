@@ -29,13 +29,13 @@
 			],
 			"instructions": [
 				{"instruction": "Beat eggs, milk, salt and pepper in medium bowl until blended.",
-					 "alt": [ 
-					 	 {"name": "vegan", "instruction": "Beat vegan egg material, soy milk, salt and pepper in medium bowl until blended."}
-					 ]},
+				 "alt": [ 
+					{"name": "vegan", "instruction": "Beat vegan egg material, soy milk, salt and pepper in medium bowl until blended."}
+				 ]},
 				{"instruction": "Heat butter in large nonstick skillet over medium heat until hot.", 
-					"alt": [ 
-					 	 {"name": "vegan", "instruction": "Heat vegan butter in large nonstick skillet over medium heat until hot"}
-					 ]},
+				 "alt": [ 
+					{"name": "vegan", "instruction": "Heat vegan butter in large nonstick skillet over medium heat until hot"}
+				]},
 				{"instruction": "Pour in egg mixture. As eggs begin to set, Gently pull the eggs across the pan with a spatula, forming large soft curds."},
 				{"instruction": "Continue cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly."},
 				{"instruction": "Remove from heat and serve immediately."}
