@@ -36,7 +36,13 @@ exports.view = function(req, res){
 //render the json
 exports.recipeJson = function(req, res) { 
   var id = req.params.id;
-  var recipe = data.recipes[id];
+  var i;
+  var recipe;
+  for(i = 0; i < data.recipes.length; i++){
+    if(data.recipes[i].id === id) {
+      recipe = data.recipes[i];
+    }
+  }
   res.json(recipe);
 }
 

@@ -25,9 +25,8 @@ function clickDropdown(e){
 function handleSelect(e){
   e.preventDefault();
   var type = $(this).attr('id');
-
-  var idNumber = 0;
-  var url = "/json/"+idNumber;
+  var id = $('.id-getter').attr('id');
+  var url = "/json/"+id;
 
   //render the corresponding ingredients
   $.get(url, function(result) {
