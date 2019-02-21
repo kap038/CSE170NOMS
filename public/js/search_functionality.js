@@ -20,8 +20,14 @@ function handleFavorites(e){
 	e.preventDefault();
 	var input = (localStorage.getItem("favorites") || '[]'); //if null, init to []
 
+	//show back button
+	$('.backbutton').show();
+
+	//hide other buttons
+	$('.small-recipes').hide();
+	$('.search-container').hide();
+
 	//get the json of all recipes
-	
 	var url = "/json/"
   	$.get(url, function(result) {
 		//add corresponding recipes to match the names
@@ -36,7 +42,7 @@ function handleFavorites(e){
   		//add any recipes that match the user's keyword
  		displayList(matches)
 
-  	}); 
+  	});
 }
 
 function handleForYou(e){
@@ -44,6 +50,9 @@ function handleForYou(e){
 
 	//show back button
 	$('.backbutton').show();
+	//hide other buttons
+	$('.small-recipes').hide();
+	$('.search-container').hide();
 
 	var input = localStorage.getItem("diet")
 	console.log(input)
@@ -67,6 +76,9 @@ function handleCompleted(e){
 
 	//show back button
 	$('.backbutton').show();
+	//hide other buttons
+	$('.small-recipes').hide();
+	$('.search-container').hide();
 
 	//get the json of all recipes
 
@@ -94,6 +106,9 @@ function handleSearch(e) {
 
 	//show back button
 	$('.backbutton').show();
+	//hide other buttons
+	$('.small-recipes').hide();
+	$('.search-container').hide();
 
 	var input = $('input#searchbox').val();
 	//case insensitive
