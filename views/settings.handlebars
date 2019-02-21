@@ -23,22 +23,23 @@
 			<h1>Settings</h1>
 		</div>
 		<div>
-			{{#each setting-list}}
+
 			<div class="dropdown-settings">
-				<button id="{{id}}" class="dropbtn">{{setting}}</button>
-				<div id="{{id}}" class="dropdown-content">
-					{{#each options}}
-					<a id ="{{option}}" href="#">{{option}}</a>
-					{{/each}}
+				<button id="dietary" class="dropbtn">Dietary Restrictions</button>
+				<div id="dietary" class="dropdown-content">
+					<a id ="normal" href="#">Normal</a>
+					<a id ="vegan" href="#">Vegan</a>
+					<a id ="nutfree" href="#">Nut free</a>
+					<a id ="glutenfree" href="#">Gluten Free</a>
 				</div>
 			</div>
-			{{/each}}
 		</div>
+
 	</div>
 	<div class="footer">
 		<div class="buttons">
 			<a href="homepage">
-				<button > Home </button>
+				<button> Home </button>
 			</a>
 			<a href="profile">
 				<button> Profile </button>

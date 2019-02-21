@@ -34,10 +34,17 @@
 	</div>
 
 	<div class="profilebuttons">
-		<a href="settings">
-			<p>Settings</p>
-		</a>
+		<div class="dropdown-settings">
+			<button id="dietary" class="dropbtn">Dietary Restrictions</button>
+			<div id="dietary" class="dropdown-content">
+				<a id ="normal" href="#">Normal</a>
+				<a id ="vegan" href="#">Vegan</a>
+				<a id ="nutfree" href="#">Nut free</a>
+				<a id ="glutenfree" href="#">Gluten Free</a>
+			</div>
+		</div>
 	</div>
+
 
 	<div class="footer">
 		<div class="buttons">
@@ -49,5 +56,8 @@
 			</a>
 		</div>
 	</div>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/profile.js"></script>
 </body>
 </html>

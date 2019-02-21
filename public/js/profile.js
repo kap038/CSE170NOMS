@@ -34,4 +34,4 @@ window.onclick = function(event) {
   if (!event.target.matches('.dropbtn') && !event.target.matches('dropdown-content')) {
     $(".dropdown-content").hide()
   }
-} 
+}
