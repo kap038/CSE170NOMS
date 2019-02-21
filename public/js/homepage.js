@@ -1,4 +1,3 @@
-//doesn't do anything?
 $(document).ready(function() {
   initializePage();
 })

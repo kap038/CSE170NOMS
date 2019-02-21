@@ -106,6 +106,23 @@
   margin-right:30px;
 }
 
+.header-back h1 {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  margin-right:30px;
+  padding: 10px;
+}
+
+.header-back button {
+  background: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  left: 2%;
+}
+
 .back-button {
-  padding-top: 25px;
+  width: 90%;
 }

@@ -11,9 +11,14 @@
 <body>
 	<div class="main">
 	<div class="body">
-		<div class="id-getter" id="{{recipe.id}}"></div>
 		<div class="header-back">
-			<a href="/homepage" class="back-button">back</a>
+			<button><img class="back-button" src="https://img.icons8.com/cotton/100/000000/circled-left-2.png" onclick="goBack()"></button>
+
+			<script>
+			function goBack() {
+				window.history.back();
+			}
+			</script>
 				<h1>{{recipeName}}</h1>
 				<a id="{{recipe.id}}" class="favorites-button">
 					<img src="/images/star-empty.png" class="favorites-button"></img>
@@ -36,7 +41,7 @@
 						{{#each alternatives}}
 						<a id="{{this}}" href="#">{{this}}</a>
 						{{/each}}
-					
+
 					</div>
 				</div>
 			</div>
