@@ -25,6 +25,12 @@ function handleSelect(e){
   e.preventDefault();
   var choice = this.id;
   localStorage.setItem("diet", choice);
+
+  $(".dropdown-settings .dropbtn").text("Dietary Restrictions: " + $(this).text());
+
+
+  console.log("Dietary restriction saved!");
+  console.log($(this).text());
 }
 
 
