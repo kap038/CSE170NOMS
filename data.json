@@ -18,35 +18,24 @@
 
 				{	"name": "vegan",
 					"ingredients": [
-					{"ingredient":"4 vegan eggs"},
-					{"ingredient":"1/4 cup vegan milk"},
-					{"ingredient":"2 tsp vegan butter"},
+					{"ingredient":"4 vegan egg substitute"},
+					{"ingredient":"1/4 cup soy milk"},
+					{"ingredient":"2 tsp vegan butter substitute"},
 					{"ingredient":"salt and pepper"}
-				] },
-
-				{	"name": "nutfree",
-					"ingredients": [
-					{"ingredient":"4 nutfree eggs"},
-					{"ingredient":"1/4 cup nutfree milk"},
-					{"ingredient":"2 tsp butter"},
-					{"ingredient":"salt and pepper"}
-				] },
-
-				{ "name": "glutenfree",
-					"ingredients": [
-					{"ingredient":"4 gluten free eggs"},
-					{"ingredient":"1/4 cup gluten free milk"},
-					{"ingredient":"2 tsp gluten free butter"},
-					{"ingredient":"salt and pepper"}
-					]
-				}
+				] }
 			],
 			"allergies":[
 				{"allergy":"dairy"}
 			],
 			"instructions": [
-				{"instruction": "Beat eggs, milk, salt and pepper in medium bowl until blended."},
-				{"instruction": "Heat butter in large nonstick skillet over medium heat until hot."},
+				{"instruction": "Beat eggs, milk, salt and pepper in medium bowl until blended.",
+					 "alt": [ 
+					 	 {"name": "vegan", "instruction": "Beat vegan egg material, soy milk, salt and pepper in medium bowl until blended."}
+					 ]},
+				{"instruction": "Heat butter in large nonstick skillet over medium heat until hot.", 
+					"alt": [ 
+					 	 {"name": "vegan", "instruction": "Heat vegan butter in large nonstick skillet over medium heat until hot"}
+					 ]},
 				{"instruction": "Pour in egg mixture. As eggs begin to set, Gently pull the eggs across the pan with a spatula, forming large soft curds."},
 				{"instruction": "Continue cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly."},
 				{"instruction": "Remove from heat and serve immediately."}

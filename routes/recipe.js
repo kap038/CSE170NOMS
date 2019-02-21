@@ -13,6 +13,13 @@ exports.view = function(req, res){
   	}
   }
   //index = recipe number
+  var alternatives = [];
+  //generate available dietary alternatives
+  for(i = 0; i < data.recipes[index].ingredients.length; i++){
+    alternatives.push(data.recipes[index].ingredients[i].name);
+  }
+
+  console.log(alternatives)
 
 
   res.render('recipe', {
@@ -20,18 +27,11 @@ exports.view = function(req, res){
     'recipe': data.recipes[index],
     'instructions':data.recipes[index].instructions,
     'ingredients': data.recipes[index].ingredients,
+    'alternatives': alternatives,
     'defaultIngredients': data.recipes[index].ingredients[0].ingredients //change this index based on user given pref
+
   });
 };
-
-/**
-'ingredients-string-reg': stringed,
-    'normalingredients': data.recipes[index].normalingredients, //list of normal ingredients
-    'glutenfreeingredients': data.recipes[index].glutenfreeingredients, //list of gluten free ingredients
-    'veganingredients': data.recipes[index].veganingredients, //list of normal ingredients
-    'nutfreeingredients': data.recipes[index].nutfreeingredients, //list of gluten free ingredients
-    'instructions':data.recipes[index].instructions  //list of instructions
-**/
 
 //render the json
 exports.recipeJson = function(req, res) { 

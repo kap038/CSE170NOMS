@@ -25,15 +25,12 @@ function clickDropdown(e){
 function handleSelect(e){
   e.preventDefault();
   var type = $(this).attr('id');
-  console.log(type);
 
   var idNumber = 0;
   var url = "/json/"+idNumber;
-  console.log(url);
 
   //render the corresponding ingredients
   $.get(url, function(result) {
-    console.log(JSON.stringify(result));
 
     var recipe = result;
     var dietIndex = 0; //default to first type if no JSON exists for this diet
@@ -46,19 +43,9 @@ function handleSelect(e){
     }
 
     var ingredients = recipe.ingredients[dietIndex].ingredients;
-    console.log(JSON.stringify(ingredients))
-
-		//
-		// Handlebars.registerHelper('each', function(ingredients) {
-		//   var new = Handlebars.escapeExpression(ingredients[dietIndex].ingredient);
-		// 	console.log(new);
-		//   return new Handlebars.SafeString(
-		//     "<li>" + new + "</li>"
-		//   );
-		// });
-
+    console.log(ingredients)
     //change html to display dietary ingredients
-		for(i = 0; i < recipe.ingredients.length; i++) {
+		for(i = 0; i < ingredients.length; i++) {
 
 			if (i == 0){
 				$("ul.ingredients").html("<li>"+ingredients[i].ingredient+"</li>");
@@ -67,8 +54,6 @@ function handleSelect(e){
 				$("ul.ingredients").append("<li>"+ingredients[i].ingredient+"</li>");
 			}
 		}
-
-
 
 
 
