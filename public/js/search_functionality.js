@@ -9,16 +9,33 @@ $(document).ready(function() {
 
 function initializePage() {
 	console.log("Javascript connected!");
+	shouldShowType();
 	$('#searchform').submit(handleSearch);
 	$('#foryou').click(handleForYou);
 	$('#completed').click(handleCompleted);
 	$('#favorites').click(handleFavorites);
 }
 
+//if user redirected from profile, show favorites or completed
+function shouldShowType(){
+	var type = $('.type-getter').attr('id');
+
+	if(type === 'favorites'){
+		favoritesLogic();
+	} else if (type === 'completed'){
+		completedLogic();
+	} else {
+		console.log(type)
+	}
+}
 
 function handleFavorites(e){
 	e.preventDefault();
+	favoritesLogic();
+	
+}
 
+function favoritesLogic(){
 	var input = (localStorage.getItem("favorites") || '[]'); //if null, init to []
 
 	//show back button
@@ -73,7 +90,11 @@ function handleForYou(e){
 
 function handleCompleted(e){
 	e.preventDefault();
+	completedLogic();
 
+}
+
+function completedLogic() {
 	var input = (localStorage.getItem("completed") || '[]'); //if null, init to []
 
 	//show back button
@@ -99,7 +120,6 @@ function handleCompleted(e){
  		displayList(matches)
 
   	});
-
 }
 
 //change displayed recipes to match search results
