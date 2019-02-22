@@ -44,7 +44,7 @@
 		{ "name": "Molten Caramel Cakes",
 			"imageURL": "https://assets.bonappetit.com/photos/5c5d93700213ca4d2973b58a/16:9/w_2560,c_limit/molten-caramel-cake-1.jpg",
 			"id": "recipe2",
-			"difficulty": "hard",
+			"difficulty": "medium",
 			"time": "2 hours",
 			"servingsize": 4,
 			"tags": ["vegan", "nutfree", "glutenfree"],
@@ -64,7 +64,7 @@
 				{	"name": "vegan",
 					"ingredients": [
 					{"ingredient":"1/4 cup coarsely chopped pecans"},
-					{"ingredient":"1/4 cup vegan butter"},
+					{"ingredient":"1/4 coconut oil"},
 					{"ingredient":"3 ounces vegan cream cheese, softened"},
 					{"ingredient":"1/3 cup firmly packed brown sugar"},
 					{"ingredient": "5oz powdered flax seed"},
@@ -157,7 +157,7 @@
 					{"ingredient":"5oz vegan egg substitute yolks"},
 					{"ingredient":"3/4 cup sugar"},
 					{"ingredient":"4 tablespoons cornstarch"},
-					{"ingredient":"1 tablespoon vegan butter substitute"},
+					{"ingredient":"1 tablespoon coconut oil"},
 					{"ingredient":"1/4 teaspoon salt"},
 					{"ingredient":"1 1/2 cups flaked sweetened coconut"},
 					{"ingredient":"1/2 teaspoon vanilla"},
@@ -202,8 +202,8 @@
 		{ "name": "Grilled Salmon with Lemon Sauce",
 			"imageURL": "https://casaveneracion.com/wp-content/uploads/2013/06/salmon.jpg",
 			"id": "recipe4",
-			"difficulty": "hard",
-			"time": "2 hours",
+			"difficulty": "medium",
+			"time": "30 minutes",
 			"servingsize": 1,
 			"tags": ["nutfree", "glutenfree"],
 			"ingredients": [
@@ -245,40 +245,29 @@
 			"imageURL": "https://d2gk7xgygi98cy.cloudfront.net/6093-3-large.jpg",
 			"id": "recipe5",
 			"difficulty": "hard",
-			"time": "2 hours",
+			"time": "24 hours",
 			"servingsize": 1,
-			"tags": ["nutfree", "vegan"],
+			"tags": ["nutfree", "vegan", "glutenfree"],
 			"ingredients": [
 				{	"name": "regular",
 					"ingredients": [
-					{"ingredient":"4 eggs"},
-					{"ingredient":"1/4 cup milk"},
-					{"ingredient":"2 tsp butter"},
-					{"ingredient":"salt and pepper"}
-				] },
-
-				{	"name": "vegan",
-					"ingredients": [
-					{"ingredient":"4 vegan eggs"},
-					{"ingredient":"1/4 cup vegan milk"},
-					{"ingredient":"2 tsp vegan butter"},
-					{"ingredient":"salt and pepper"}
-				] },
-
-				{	"name": "nutfree",
-					"ingredients": [
-					{"ingredient":"4 nutfreeeggs"},
-					{"ingredient":"1/4 cup nutfree milk"},
-					{"ingredient":"2 tsp butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"2 cups white bread flour"},
+					{"ingredient":"1 1/2 tsp kosher salt"},
+					{"ingredient":"2 tsp xanthum gum"},
+					{"ingredient":"1/2 cup sourdough starter"},
+					{"ingredient":"1 cup water"}
 				] },
 
 				{ "name": "glutenfree",
 					"ingredients": [
-					{"ingredient":"4 glutenfree eggs"},
-					{"ingredient":"1/4 cup glutenfree milk"},
-					{"ingredient":"2 tsp glutenfree butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"1/2 cup millet flour"},
+					{"ingredient":"1/2 cup sorghum flour"},
+					{"ingredient":"1/2 cup arrowroot starch"},
+					{"ingredient":"1/2 cup white rice flour"},
+					{"ingredient":"1 1/2 tsp kosher salt"},
+					{"ingredient":"2 tsp xanthum gum"},
+					{"ingredient":"1/2 cup sourdough starter"},
+					{"ingredient":"1 cup water"}
 					]
 				}
 			],
@@ -287,51 +276,56 @@
 				{"allergy":"tree nuts"}
 			],
 			"instructions": [
-				{"instruction": "Beat eggs, milk, salt and pepper in medium bowl until blended."},
-				{"instruction": "Heat butter in large nonstick skillet over medium heat until hot."},
-				{"instruction": "Pour in egg mixture. As eggs begin to set, Gently pull the eggs across the pan with a spatula, forming large soft curds."},
-				{"instruction": "Continue cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly."},
-				{"instruction": "Remove from heat and serve immediately."}
+				{"instruction": "In a large bowl, whisk together dry ingredients."},
+				{"instruction": "Mix in sourdough starter, then add enough water so that the dough resembles pancake batter. Stir to combine."},
+				{"instruction": "Let the dough rise for 12-24 hours at room temperature."},
+				{"instruction": "Bake at 375 in a greased loaf pan until the top is golden brown, about 1 hour."},
+				{"instruction": "Cool completely before slicing."}
 			]
 		},
 		{ "name": "Pasta al Limone",
 			"imageURL": "https://assets.bonappetit.com/photos/5b9a901947aaaf7cd9ea90f2/16:9/w_1200,c_limit/ba-recipe-pasta-al-limone.jpg",
 			"id": "recipe6",
-			"difficulty": "hard",
+			"difficulty": "medium",
 			"time": "2 hours",
 			"servingsize": 1,
-			"tags": ["nutfree", "vegan"],
+			"tags": ["nutfree", "vegan", "glutenfree"],
 			"ingredients": [
 				{	"name": "regular",
 					"ingredients": [
-					{"ingredient":"4 eggs"},
-					{"ingredient":"1/4 cup milk"},
-					{"ingredient":"2 tsp butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"5 tablespoons unsalted butter"},
+					{"ingredient":"1/2 cup Lemon juice"},
+					{"ingredient":"Lemon zest"},
+					{"ingredient":"Kosher salt"},
+					{"ingredient":"1 lb fresh spaghetti"},
+					{"ingredient":"1 oz grated Parmigiano-Reggiano cheese,"},
+					{"ingredient":"Lemon zest"},
+					{"ingredient":"Freshly ground black pepper"}
 				] },
 
 				{	"name": "vegan",
 					"ingredients": [
-					{"ingredient":"4 vegan eggs"},
-					{"ingredient":"1/4 cup vegan milk"},
-					{"ingredient":"2 tsp vegan butter"},
-					{"ingredient":"salt and pepper"}
-				] },
-
-				{	"name": "nutfree",
-					"ingredients": [
-					{"ingredient":"4 nutfree eggs"},
-					{"ingredient":"1/4 cup nutfree milk"},
-					{"ingredient":"2 tsp butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"5 tablespoons vegan butter"},
+					{"ingredient":"1/4 cup olive oil"},
+					{"ingredient":"1/2 cup Lemon juice"},
+					{"ingredient":"Lemon zest"},
+					{"ingredient":"Kosher salt"},
+					{"ingredient":"1 lb fresh spaghetti"},
+					{"ingredient":"1 oz Nutritional yeast,"},
+					{"ingredient":"Lemon zest"},
+					{"ingredient":"Freshly ground black pepper"}
 				] },
 
 				{   "name": "glutenfree",
 					"ingredients": [
-					{"ingredient":"4 glutenfree eggs"},
-					{"ingredient":"1/4 cup glutenfree milk"},
-					{"ingredient":"2 tsp glutenfree butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"5 tablespoons unsalted butter"},
+					{"ingredient":"1/2 cup Lemon juice"},
+					{"ingredient":"Lemon zest"},
+					{"ingredient":"Kosher salt"},
+					{"ingredient":"1 lb gluten free spaghetti"},
+					{"ingredient":"1 oz grated Parmigiano-Reggiano cheese,"},
+					{"ingredient":"Lemon zest"},
+					{"ingredient":"Freshly ground black pepper"}
 					]
 				}
 			],
@@ -340,51 +334,63 @@
 				{"allergy":"tree nuts"}
 			],
 			"instructions": [
-				{"instruction": "Beat eggs, milk, salt and pepper in medium bowl until blended."},
-				{"instruction": "Heat butter in large nonstick skillet over medium heat until hot."},
-				{"instruction": "Pour in egg mixture. As eggs begin to set, Gently pull the eggs across the pan with a spatula, forming large soft curds."},
-				{"instruction": "Continue cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly."},
-				{"instruction": "Remove from heat and serve immediately."}
+				{"instruction": "In a large skillet, melt butter over medium heat until foaming. Lower heat to low, add lemon zest and garlic, and cook, stirring, until fragrant, 1 to 2 minutes."},
+				{"instruction": "Meanwhile, in a medium pot of boiling salted water, cook pasta until just shy of al dente. Reserve about 1 cup (240ml) of the starchy pasta water, then drain pasta."},
+				{"instruction": "Add pasta to butter mixture, along with 1/2 cup (120ml) reserved pasta water. Increase heat to medium-high and cook, stirring and tossing to coat, until pasta is glazed in a satiny, emulsified sauce."},
+				{"instruction": "Add grated cheese and toss and stir rapidly until sauce thickens; if it becomes too tight and dry at any time, add more pasta-cooking water to loosen it sufficiently. Add lemon juice to taste, starting with 1 tablespoon (15ml), then adding more until desired tartness is reached. Season with salt and pepper.",
+				"alt": [ 
+						{"name": "vegan", "instruction": "Sprinkle nutritional yeast and toss and stir rapidly until sauce thickens; if it becomes too tight and dry at any time, add more pasta-cooking water to loosen it sufficiently. Add lemon juice to taste, starting with 1 tablespoon (15ml), then adding more until desired tartness is reached. Season with salt and pepper."}
+					]},
+				{"instruction": "Serve spaghetti right away, topping each serving with additional grated lemon zest and cheese.",
+				"alt": [ 
+						{"name": "vegan", "instruction": "Serve spaghetti right away, topping each serving with additional grated lemon zest and nutrtional yeast."}
+					]}
 			]
 		},
-		{ "name": "Salted Caramel Chocolate Tart",
-			"imageURL": "https://assets.bonappetit.com/photos/5a7cb38dbcc56579b57f2085/16:9/w_1000,c_limit/salted-caramel-chocolate-tart.jpg",
+		{ "name": "Chocolate Brownies",
+			"imageURL": "https://images.media-allrecipes.com/userphotos/720x405/3850414.jpg",
 			"id": "recipe7",
-			"difficulty": "hard",
-			"time": "2 hours",
+			"difficulty": "easy",
+			"time": "30 minutes",
 			"servingsize": 1,
-			"tags": ["nutfree", "vegan"],
+			"tags": ["nutfree", "vegan", "glutenfree"],
 			"ingredients": [
 				{	"name": "regular",
 					"ingredients": [
-					{"ingredient":"4 eggs"},
-					{"ingredient":"1/4 cup milk"},
-					{"ingredient":"2 tsp butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"1/2 cup butter"},
+					{"ingredient":"1 cup white sugar"},
+					{"ingredient":"2 eggs"},
+					{"ingredient":"2/3 cup chocolate chips"},
+					{"ingredient":"1/4 teaspoon baking powder"},
+					{"ingredient":"1 teaspoon vanilla extract"},
+					{"ingredient":"1/3 cup unsweetened cocoa powder"},
+					{"ingredient":"1/2 cup all-purpose flour"},
+					{"ingredient":"1/2 teaspoon salt"}
 				] },
 
 				{	"name": "vegan",
 					"ingredients": [
-					{"ingredient":"4 vegan eggs"},
-					{"ingredient":"1/4 cup vegan milk"},
-					{"ingredient":"2 tsp vegan butter"},
-					{"ingredient":"salt and pepper"}
-				] },
-
-				{	"name": "nutfree",
-					"ingredients": [
-					{"ingredient":"4 nutfreeeggs"},
-					{"ingredient":"1/4 cup nutfree milk"},
-					{"ingredient":"2 tsp butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"1/2 cup vegetable oil"},
+					{"ingredient":"1 cup stevia baking blend"},
+					{"ingredient":"2 tbsp flaxmeal"},
+					{"ingredient":"1/4 teaspoon baking powder"},
+					{"ingredient":"1 teaspoon vanilla extract"},
+					{"ingredient":"2/3 cup chocolate chips"},
+					{"ingredient":"1/3 cup unsweetened cocoa powder"},
+					{"ingredient":"1/2 cup all-purpose flour"},
+					{"ingredient":"1/2 teaspoon salt"}
 				] },
 
 				{"name": "glutenfree",
 					"ingredients": [
-					{"ingredient":"4 glutenfree eggs"},
-					{"ingredient":"1/4 cup glutenfree milk"},
-					{"ingredient":"2 tsp glutenfree butter"},
-					{"ingredient":"salt and pepper"}
+					{"ingredient":"1/2 cup butter"},
+					{"ingredient":"1 cup white sugar"},
+					{"ingredient":"2 eggs"},
+					{"ingredient":"1/4 teaspoon baking powder"},
+					{"ingredient":"1 teaspoon gluten-free vanilla extract"},
+					{"ingredient":"1/3 cup Dutch-process cocoa powder"},
+					{"ingredient":"1/2 cup brown rice flour"},
+					{"ingredient":"1/2 teaspoon salt"}
 					]
 				}
 			],
@@ -393,11 +399,9 @@
 				{"allergy":"tree nuts"}
 			],
 			"instructions": [
-				{"instruction": "Beat eggs, milk, salt and pepper in medium bowl until blended."},
-				{"instruction": "Heat butter in large nonstick skillet over medium heat until hot."},
-				{"instruction": "Pour in egg mixture. As eggs begin to set, Gently pull the eggs across the pan with a spatula, forming large soft curds."},
-				{"instruction": "Continue cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly."},
-				{"instruction": "Remove from heat and serve immediately."}
+				{"instruction": "Preheat oven to 350 degrees F (175 degrees C). Grease and flour an 8-inch square pan."},
+				{"instruction": "In a large saucepan, melt 1/2 cup butter. Remove from heat, and stir in sugar, eggs, and 1 teaspoon vanilla. Beat in 1/3 cup cocoa, 1/2 cup flour, salt, and baking powder. Spread batter into prepared pan."},
+				{"instruction": "Bake in preheated oven for 25 to 30 minutes. Do not overcook."}
 			]
 		}
 
