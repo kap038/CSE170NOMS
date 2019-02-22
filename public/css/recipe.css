@@ -47,3 +47,8 @@
 .steps-count {
   text-align: center;
 }
+
+.favorites-button {
+  position: relative;
+  top: 20%;
+}
