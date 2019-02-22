@@ -3,7 +3,7 @@
     max-width: 500px;
     margin: auto;
     margin-bottom: 50px;
-    background-color: #636363;
+    background-color: #ceedff;
 }
 
 .header {
@@ -32,7 +32,7 @@
   bottom: 0;
   width: 100%;
   height: 40px;
-  background-color: #636363;
+  background-color: gray;
 }
 
 .footer button {
@@ -125,4 +125,65 @@
 
 .back-button {
   width: 90%;
+}
+
+
+.recipe {
+  width: 94%;
+  position: relative;
+  left: 3%;
+  margin-bottom: 20px;
+}
+
+.recipe img {
+  height: 280px;
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+}
+
+.recipe h5 {
+  margin-left: 15px;
+  font-size: 25;
+  color: black;
+}
+
+.recipe p {
+  margin: 2px 2px;
+}
+
+.recipe-details {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.recipe-details p {
+  color: white;
+}
+
+.recipe-tags {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  margin: 0px 20px 0px 20px;
+}
+
+.detail {
+  background-color: #aecbfc;
+  padding: 3px 10px 3px 10px;
+  display: flex;
+}
+
+#time
+{
+  background: none;
+  color: #666666;
+  padding: 3px 10px 3px 10px;
+  display: flex;
+}
+
+.tag {
+  background-color: #ffffff;
+  padding: 3px 10px 3px 10px;
 }
