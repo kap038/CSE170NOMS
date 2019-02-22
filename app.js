@@ -13,7 +13,6 @@ var profile = require('./routes/profile');
 var recipe = require('./routes/recipe');
 var recipe_steps = require('./routes/recipe_steps');
 var login = require('./routes/login');
-var settings = require('./routes/settings');
 var signup = require('./routes/signup');
 // Example route
 // var user = require('./routes/user');
@@ -47,7 +46,6 @@ app.get('/recipe/:id/:type/complete', recipe_steps.complete);
 app.get('/recipe/:id/:type/:step', recipe_steps.view);
 app.get('/recipe/:id', recipe.view);
 app.get('/homepage', homepage.view);
-app.get('/settings', settings.view);
 app.get('/signup', signup.view);
 app.get('/json/:id', recipe.recipeJson);
 app.get('/json/', recipe.allJson);
