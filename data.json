@@ -47,7 +47,7 @@
 			"difficulty": "hard",
 			"time": "2 hours",
 			"servingsize": 4,
-			"tags": ["vegan"],
+			"tags": ["vegan", "nutfree", "glutenfree"],
 			"ingredients": [
 
 				{	"name": "regular",
@@ -63,33 +63,33 @@
 
 				{	"name": "vegan",
 					"ingredients": [
-					{"ingredient":"1/4 cup coarsely chopped vegan pecans"},
+					{"ingredient":"1/4 cup coarsely chopped pecans"},
 					{"ingredient":"1/4 cup vegan butter"},
 					{"ingredient":"3 ounces vegan cream cheese, softened"},
-					{"ingredient":"1/3 cup firmly packed vegan brown sugar"},
-					{"ingredient": "3 large vegan eggs"},
-					{"ingredient": "1 tsp vegan vanilla"},
-					{"ingredient": "1/4 cup all-purpose vegan flour"}
+					{"ingredient":"1/3 cup firmly packed brown sugar"},
+					{"ingredient": "5oz powdered flax seed"},
+					{"ingredient": "1 tsp  vanilla"},
+					{"ingredient": "1/4 cup all-purpose flour"}
 				] },
 
 				{	"name": "nutfree",
 					"ingredients": [
-					{"ingredient":"1/4 cup coarsely chopped nutfree pecans"},
-					{"ingredient":"1/4 cup nutfree butter"},
-					{"ingredient":"3 ounces nutfree cream cheese, softened"},
-					{"ingredient":"1/3 cup firmly packed nutfree brown sugar"},
-					{"ingredient": "3 large nutfree eggs"},
+					{"ingredient":"1/4 cup crispy rice cereal"},
+					{"ingredient":"1/4 cup butter"},
+					{"ingredient":"3 ounces cream cheese, softened"},
+					{"ingredient":"1/3 cup firmly packed brown sugar"},
+					{"ingredient": "3 large eggs"},
 					{"ingredient": "1 tsp nutfree vanilla"},
 					{"ingredient": "1/4 cup all-purpose nutfree flour"}
 				] },
 
 				{	"name": "glutenfree",
 					"ingredients": [
-					{"ingredient":"1/4 cup coarsely chopped glutenfree pecans"},
-					{"ingredient":"1/4 cup glutenfree butter"},
-					{"ingredient":"3 ounces glutenfree cream cheese, softened"},
-					{"ingredient":"1/3 cup firmly packed glutenfree brown sugar"},
-					{"ingredient": "3 large glutenfree eggs"},
+					{"ingredient":"1/4 cup coarsely chopped pecans"},
+					{"ingredient":"1/4 cup butter"},
+					{"ingredient":"3 ounces cream cheese, softened"},
+					{"ingredient":"1/3 cup firmly packed brown sugar"},
+					{"ingredient": "3 large eggs"},
 					{"ingredient": "1 tsp glutenfree vanilla"},
 					{"ingredient": "1/4 cup all-purpose glutenfree flour"}
 				] }
@@ -102,12 +102,21 @@
 			"instructions": [
 				{"instruction": "Heat oven to 400°F."},
 				{"instruction": "Grease 4 (6-ounce) custard cups; place onto ungreased baking sheet."},
-				{"instruction": "Sprinkle pecans into bottom of each cup; set aside."},
+				{"instruction": "Sprinkle pecans into bottom of each cup; set aside.",
+				"alt": [ 
+						{"name": "nutfree", "instruction": "Sprinkle crisp rice into bottom of each cup; set aside."}
+					]},
 				{"instruction": "Combine chocolate chips and butter in bowl. Microwave 45-60 seconds, stirring twice, until melted and smooth."},
 				{"instruction": "Add cream cheese; beat at medium speed until smooth. Set aside."},
-				{"instruction": "Combine brown sugar, eggs and vanilla in bowl; beat at medium speed until well mixed."},
+				{"instruction": "Combine brown sugar, eggs and vanilla in bowl; beat at medium speed until well mixed.",
+					"alt": [ 
+						{"name": "vegan", "instruction": "Combine brown sugar, flax powder, and vanilla in bowl; beat at medium speed until well mixed."}
+					]},
 				{"instruction": "Add chocolate mixture; continue beating until well mixed."},
-				{"instruction": "Add flour; beat at low speed until well mixed."},
+				{"instruction": "Add flour; beat at low speed until well mixed.",
+					"alt": [ 
+						{"name": "glutenfree", "instruction": "Add glutenfree flour; beat at low speed until well mixed."}
+					]},
 				{"instruction": "Divide batter evenly among prepared custard cups. Bake 13-15 minutes or until top is puffy and cracked in appearance but center is soft. Cool 5 minutes."},
 				{"instruction": "Gently run small knife around outside edges of cakes."},
 				{"instruction": "Carefully invert each warm cake onto small serving plate. Serve immediately."}
