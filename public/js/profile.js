@@ -13,6 +13,9 @@ function initializePage() {
  //child elements of this class
   $(".dropdown-content > a").click(handleSelect);
 
+  var type = localStorage.getItem("diet");
+  $(".dropdown-settings .dropbtn").text("Dietary Restrictions: " +type);
+
   verifyFbLogin();
 
 }

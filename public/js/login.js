@@ -1,6 +1,7 @@
 $(document).ready(function() {
   initializePage();
   localStorage.clear();
+  localStorage.setItem("diet", "normal");
 })
 
 function initializePage() {

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  localStorage.setItem("diet", "normal"); //by default normal pref
+  //by default normal pref
 })
 
 function checkLoginState() {

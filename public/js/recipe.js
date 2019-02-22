@@ -9,6 +9,11 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+
+  //set ingredients to the user's dietary pref
+  var type = localStorage.getItem("diet");
+  changeRecipe(type)
+
   $("button.dropbtn").click(clickDropdown);
  //child elements of this class
   $(".dropdown-content > a").click(handleSelect);
@@ -25,14 +30,18 @@ function clickDropdown(e){
 function handleSelect(e){
   e.preventDefault();
   var type = $(this).attr('id');
+  changeRecipe(type)
+  
+}
+
+function changeRecipe(type){
   var id = $('.id-getter').attr('id');
   var url = "/json/"+id;
-
   //render the corresponding ingredients
   $.get(url, function(result) {
 
     var recipe = result;
-    var dietIndex = 0; //default to first type if no JSON exists for this diet
+    var dietIndex = -1; //default to first type if no JSON exists for this diet
     var i;
     //find which type this is
     for(i = 0; i < recipe.ingredients.length; i++) {
@@ -41,51 +50,56 @@ function handleSelect(e){
       }
     }
 
-    var ingredients = recipe.ingredients[dietIndex].ingredients;
-    console.log(ingredients)
-    //change html to display dietary ingredients
-		for(i = 0; i < ingredients.length; i++) {
+    //if dietary mode for this exists
+    if(dietIndex != -1) { 
 
-			if (i == 0){
-				$("ul.ingredients").html("<li>"+ingredients[i].ingredient+"</li>");
-			}
-			else{
-				$("ul.ingredients").append("<li>"+ingredients[i].ingredient+"</li>");
-			}
-		}
+      var ingredients = recipe.ingredients[dietIndex].ingredients;
+      console.log(ingredients)
+      //change html to display dietary ingredients
+      for(i = 0; i < ingredients.length; i++) {
 
-    var instructions = [];
-    for(i = 0; i < recipe.instructions.length; i++){
-
-      //find an alternative instruction matching mode
-      var alt = (recipe.instructions[i].alt) || '[]'
-      //search alts for thing to add
-      var j;
-      var found = false;
-      for(j = 0; j < alt.length; j++){
-        if(alt[j].name === type){
-          instructions.push(alt[j].instruction)
-          found = true;
+        if (i == 0){
+          $("ul.ingredients").html("<li>"+ingredients[i].ingredient+"</li>");
+        }
+        else{
+          $("ul.ingredients").append("<li>"+ingredients[i].ingredient+"</li>");
         }
       }
-      if(!found){
-         instructions.push(recipe.instructions[i].instruction)
-      }
-    }
 
-    //render instructions
-    for(i = 0; i < instructions.length; i++) {
+      var instructions = [];
+      for(i = 0; i < recipe.instructions.length; i++){
 
-      if (i == 0){
-        $("ol.instructions").html("<li>"+instructions[i]+"</li>");
+        //find an alternative instruction matching mode
+        var alt = (recipe.instructions[i].alt) || '[]'
+        //search alts for thing to add
+        var j;
+        var found = false;
+        for(j = 0; j < alt.length; j++){
+          if(alt[j].name === type){
+            instructions.push(alt[j].instruction)
+            found = true;
+          }
+        }
+        if(!found){
+           instructions.push(recipe.instructions[i].instruction)
+        }
       }
-      else{
-        $("ol.instructions").append("<li>"+instructions[i]+"</li>");
-      }
-   }
 
-    //change start url
-  $("a#start-button").attr("href", recipe.id+"/"+type+"/1");
+      //render instructions
+      for(i = 0; i < instructions.length; i++) {
+
+        if (i == 0){
+          $("ol.instructions").html("<li>"+instructions[i]+"</li>");
+        }
+        else{
+          $("ol.instructions").append("<li>"+instructions[i]+"</li>");
+        }
+     }
+
+      //change start url
+    $("a#start-button").attr("href", recipe.id+"/"+type+"/1");
+
+  }
   });
 }
 
