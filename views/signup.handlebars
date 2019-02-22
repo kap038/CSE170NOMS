@@ -31,10 +31,10 @@
 
                     <div class="input-container" id="restriction">
                          <label>Select Dietary Restrictions:</label>
-                         <input type="radio" name="restriction" value="vegan"> None
-                         <input type="radio" name="restriction" value="nutfree"> Nut free
-												 <input type="radio" name="restriction" value="vegan"> Vegan
-                         <input type="radio" name="restriction" value="nutfree"> Gluten free
+                         <input type="radio" class="select-type" name="restriction" id="vegan"> None
+                         <input type="radio"  class="select-type" name="restriction" id="nutfree"> Nut free
+						<input type="radio"  class="select-type" name="restriction" id="vegan"> Vegan
+                         <input type="radio"  class="select-type" name="restriction" id="glutenfree"> Gluten free
                     </div>
 
 
@@ -56,5 +56,7 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/signup.js"></script>
 </body>
 </html>
