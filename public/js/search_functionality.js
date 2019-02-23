@@ -5,7 +5,6 @@ $(document).ready(function() {
 	$('.backbutton').hide();
 	initializePage();
 	//hide back button
-
 })
 
 function initializePage() {
@@ -33,7 +32,7 @@ function shouldShowType(){
 function handleFavorites(e){
 	e.preventDefault();
 	favoritesLogic();
-	
+
 }
 
 function favoritesLogic(){
@@ -165,8 +164,9 @@ function getMatches(input, json) {
 
 	for(i = 0; i < recipes.length; i++) {
 		var strName = JSON.stringify(recipes[i].name).toLowerCase();
-		//check name and tags
-		if(strName.includes(input) || recipes[i].tags.includes(input)){
+		//check name, tags, difficulty, and length
+		if(strName.includes(input) || recipes[i].tags.includes(input) ||
+			 recipes[i].difficulty.includes(input) || recipes[i].time.startsWith(input)){
 			matches.push(recipes[i])
 		}
 	}
