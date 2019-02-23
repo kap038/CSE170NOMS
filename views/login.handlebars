@@ -22,20 +22,19 @@
 	<div class="login-container">
 		<div class="input-container">
 			<label>Username:</label>
-				<input type="text" placeholder="cookingmama123">
+				<input id="username" type="text" placeholder="cookingmama123">
 			</input>
 		</div>
 		<div class="input-container">
 			<label>Password:</label>
-			<input type="text" placeholder="yummybunz">
+			<input id="password" type="text" placeholder="yummybunz">
 			</input>
 		</div>
 		<div class="signup-container">
-			<a href="homepage">
-				<button>Login</button>
-			</a>
+				<button id="login">Login</button>
+			<h5>First time here?</h5>
 			<a href="signup">
-				<button>Sign Up</button>
+				<button id="signup">Sign Up</button>
 			</a>
 		</div>
 		<div class="start-cooking">
@@ -48,11 +47,11 @@
 			</a>
 
 		</div>
-		<p class="fblogin">
+		<h5 class="fblogin">
 			Login through Facebook
 			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 		</fb:login-button>
-		</p>
+	</h5>
 	</div>
 	<div class="footer">
 		<div class="buttons">

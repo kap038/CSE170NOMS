@@ -28,9 +28,11 @@ function verifyFbLogin(){
   console.log(name);
   console.log(picture);
 
-  if(name!=null && picture!= null){
-    $("#photo").attr("src", picture);
+  if(name!=null){
     $("#name").text(name);
+  }
+  if(picture!=null){
+    $("#photo").attr("src", picture);
   }
 }
 
