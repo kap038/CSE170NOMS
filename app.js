@@ -46,6 +46,7 @@ app.get('/recipe/:id/:type/complete', recipe_steps.complete);
 app.get('/recipe/:id/:type/:step', recipe_steps.view);
 app.get('/recipe/:id', recipe.view);
 app.get('/homepage', homepage.view);
+app.get('/homepage_B', homepage.view_B);
 app.get('/signup', signup.view);
 app.get('/json/:id', recipe.recipeJson);
 app.get('/json/', recipe.allJson);
