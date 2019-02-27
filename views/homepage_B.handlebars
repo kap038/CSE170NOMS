@@ -43,25 +43,29 @@
 			<div id="available-recipes" class="available-recipes">
 				{{#each recipes}}
 				<div class="recipe" id="B">
-						<a class="recipe-link" id="{{id}}" href="recipe/{{id}}" style="color:gray;">
+						<a class="recipe-link" id="{{id}}" href="recipe/{{id}}">
 								<img src={{imageURL}} class="img-responsive recipe-img">
 									 <div class="text-left">
 										 <h5>{{name}}</h5>
 										 <div class="recipe-tags">
 											 {{#each tags}}
-											 <p class="tag" style="font-family: Courier;"><em>#{{this}}</em></p>
+											 <p class="tag" class="recipe-tag"><em>#{{this}}</em></p>
 											 {{/each}}
 										</div>
 										 <div class="recipe-details">
 													<p class="detail">
 													<!-- WEIGHT ICON -->
-													<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 224 224" style=" fill: white; margin-right: 5px;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g id="original-icon" fill="#666666"><path d="M59.73333,44.8c-4.1216,0 -7.46667,3.34507 -7.46667,7.46667v119.46667c0,4.1216 3.34507,7.46667 7.46667,7.46667h22.4v-52.26667h59.73333v52.26667h22.4c4.1216,0 7.46667,-3.34507 7.46667,-7.46667v-119.46667c0,-4.1216 -3.34507,-7.46667 -7.46667,-7.46667h-22.4v52.26667h-59.73333v-52.26667zM22.4,67.2c-4.1216,0 -7.46667,3.34507 -7.46667,7.46667v22.4h-14.93333v29.86667h14.93333v22.4c0,4.1216 3.34507,7.46667 7.46667,7.46667h14.93333v-89.6zM186.66667,67.2v89.6h14.93333c4.1216,0 7.46667,-3.34507 7.46667,-7.46667v-22.4h14.93333v-29.86667h-14.93333v-22.4c0,-4.1216 -3.34507,-7.46667 -7.46667,-7.46667z"></path></g></g></svg>
+													<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 224 224" class="svg-style">
+														<g id="original-icon" fill="#666666"><path class="weight-icon"></path></g>
+													</svg>
 													{{difficulty}}
 													</p>
 
 													<p class="detail" id="time">
 													<!-- TIME ICON -->
-													<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 224 224" style=" fill:white;margin-right: 5px;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#666666"><path d="M104.53333,22.4v37.33333c-0.03808,2.69275 1.37667,5.19741 3.70252,6.55489c2.32585,1.35749 5.20245,1.35749 7.5283,0c2.32585,-1.35749 3.7406,-3.86215 3.70252,-6.55489v-20.89792c37.61708,3.90606 67.2,34.49129 67.2,73.16458c0,41.32452 -33.34215,74.66667 -74.66667,74.66667c-41.32452,0 -74.66667,-33.34215 -74.66667,-74.66667c0,-18.32106 6.58499,-34.99815 17.51458,-47.97917c1.71954,-2.04235 2.21883,-4.84694 1.30977,-7.35724c-0.90906,-2.5103 -3.08834,-4.3449 -5.71687,-4.81268c-2.62853,-0.46777 -5.30695,0.50235 -7.02623,2.54492c-13.09814,15.55658 -21.01458,35.69482 -21.01458,57.60417c0,49.39548 40.20452,89.6 89.6,89.6c49.39548,0 89.6,-40.20452 89.6,-89.6c0,-49.39548 -40.20452,-89.6 -89.6,-89.6zM70.14583,67.25833c-2.18645,0.31885 -3.8185,2.8833 -2.3625,5.1625c10.9312,17.15093 29.59646,46.07563 33.65834,50.1375c5.83146,5.83147 15.28519,5.83147 21.11666,0c5.83147,-5.83146 5.83147,-15.28519 0,-21.11666c-4.06187,-4.06934 -32.98656,-22.72714 -50.1375,-33.65834c-0.75973,-0.48533 -1.54618,-0.63128 -2.275,-0.525z"></path></g></g></svg>
+													<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 224 224" class="svg-style">
+														<g fill="#666666"><path class="time-icon"></path></g>
+													</svg>
 													 {{time}}
 												</p>
 										 </div>
