@@ -190,7 +190,7 @@ function displayList(matches){
 						'<h3>'+match.name+'</h3>'+
 						'<img src='+match.imageURL+' class="img-responsive">'+
 						'<p>Difficulty: '+match.difficulty+'</p>'+
-						'<p>Time: '+match.time+'</p> </a> <hr> </div> </div>'
+						'<p>Time: '+match.time+'</p> </a> <hr> </div> </div>' 
 
 				//first item needs to replace existing html
 	  			if(i == 0) {

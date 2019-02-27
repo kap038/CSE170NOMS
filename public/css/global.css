@@ -175,6 +175,10 @@
   color: gray;
 }
 
+a:hover, a:focus {
+  text-decoration-color: gray;
+}
+
 
 .detail {
   background-color: #aecbfc;
@@ -193,6 +197,7 @@
 .tag {
   background-color: #ffffff;
   padding: 3px 10px 3px 10px;
+  font-family: Courier;
 }
 
 .time-icon{
@@ -208,6 +213,3 @@
   margin-right: 5px;
 }
 
-.recipe-tag {
-  font-family: Courier;
-}
