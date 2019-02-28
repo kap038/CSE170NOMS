@@ -177,7 +177,7 @@ function getMatches(input, json) {
 function displayList(matches){
 	 	if(matches.length == 0){
   			var html = "<div>Sorry, no matches found.</div>";
-  			$("#available-recipes").html(html);
+  			$(".available-recipes").html(html);
   		} else {
   			var i;
   			var j;

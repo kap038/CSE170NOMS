@@ -78,9 +78,11 @@ exports.complete = function(req, res){
   var id = req.params.id;
   var type = req.params.type;
   var version = req.params.v;
+  var viewAlt = false
   if(version == "B"){
     viewAlt = true;
   } 
+
 
   //loop thru and find the recipe matching this name
   index = 0;
