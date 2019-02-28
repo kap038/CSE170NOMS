@@ -90,6 +90,7 @@
   width: 150px;
   margin: 5px;
   background-color: #FFB852;
+  position: relative;
   margin-top: 10px;
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.4), 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
 }
