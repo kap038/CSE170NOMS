@@ -208,9 +208,9 @@ function displayList(matches){
 
 				//first item needs to replace existing html
 	  			if(i == 0) {
-	  				$("#available-recipes").html(html);
+	  				$(".available-recipes").html(html);
 	  			} else {
-	  				$("#available-recipes").append(html);
+	  				$(".available-recipes").append(html);
 	  			}
 	  		}
   		}
