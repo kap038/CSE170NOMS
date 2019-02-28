@@ -175,12 +175,13 @@ function getMatches(input, json) {
 
 //display a given array of recipes matching category
 function displayList(matches){
-	 		if(matches.length == 0){
+	 	if(matches.length == 0){
   			var html = "<div>Sorry, no matches found.</div>";
   			$("#available-recipes").html(html);
   		} else {
   			var i;
   			var j;
+  			var version = $(".version-getter").attr('id');
 	  		//render matching results
 	  		for(i = 0; i < matches.length; i++){
 	  			//$("ul.ingredients").html("<li>"+matches[i].ingredient+"</li>");
@@ -192,7 +193,7 @@ function displayList(matches){
 	  			}
 	  			var html = '<div id='+match.id+' class="recipe-list">'+
 					'<div class="recipe">'+
-						'<a class="recipe-link" id="'+match.id+'" href="recipe/'+match.id+'">'+
+						'<a class="recipe-link" id="'+match.id+'" href='+version+'/recipe/'+match.id+'>'+
 						'<img src='+match.imageURL+' class="img-responsive recipe-img">'+
 						'<h5>'+match.name+'</h5>'+
 						'<div class="recipe-tags">'+ tags +'</div>'+

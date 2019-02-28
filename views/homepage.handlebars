@@ -6,13 +6,13 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/global.css" rel="stylesheet">
-			{{#if viewAlt}}
-					<link href="/css/homepage_B.css" rel="stylesheet">	
-				{{else}}
-					<a href="homepage">
-						<link href="/css/homepage.css" rel="stylesheet">
-					</a>
-				{{/if}}
+	{{#if viewAlt}}
+			<link class="homepage-css" id="B" href="/css/homepage_B.css" rel="stylesheet">	
+		{{else}}
+			<a href="homepage">
+				<link class="homepage-css" id="A" href="/css/homepage.css" rel="stylesheet">
+			</a>
+		{{/if}}
 	
 
 		<!-- Google Analytics -->
@@ -36,7 +36,7 @@
 						<button>See all recipes</button>
 					</a>	
 				{{else}}
-					<a href="homepage">
+					<a href="homepage_A">
 						<button>See all recipes</button>
 					</a>
 				{{/if}}
@@ -53,6 +53,12 @@
 				</input>
 				</div>
 				<div class="type-getter" id="{{type}}"></div>
+				{{#if viewAlt}}
+					<div class="version-getter" id="B"></div>
+				{{else}}
+					<div class="version-getter" id="A"></div>
+				{{/if}}	
+				
 				<div class="recipe-header">
 
 					<div class="small-recipes">
@@ -68,7 +74,11 @@
 			<div class="available-recipes">
 				{{#each recipes}}
 				<div class="recipe">
-						<a class="recipe-link" id="{{id}}" href="recipe/{{id}}">
+						{{#if viewAlt}}
+							<a class="recipe-link" id="{{id}}" href="B/recipe/{{id}}">
+						{{else}}
+							<a class="recipe-link" id="{{id}}" href="A/recipe/{{id}}">
+						{{/if}}		
 							<img src={{imageURL}} class="img-responsive recipe-img">
 								 <h5>{{name}}</h5>
 								 <div class="recipe-tags">
