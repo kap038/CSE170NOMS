@@ -94,3 +94,45 @@
   margin-top: 10px;
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.4), 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
 }
+
+#filterbutton button{
+    background-color: #FFB852;
+    border: none;
+    color: #636363;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.apply-filters button{
+    background-color: #FFB852;
+    border: none;
+    color: #636363;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+.filter-tooltip {
+  width: 100%;
+  background-color: #aecbfc;
+}
+
+.tooltip-flexbox {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.tooltip-rows{
+  display: flex;
+  flex-direction: row;
+}

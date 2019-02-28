@@ -64,9 +64,37 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		<div class="content">
 			<div class="top-container">
 				<div class="search-container">
-					<form id="searchform">
-						<input id="searchbox" type="text" placeholder="Search for recipes or dietary restrictions">
-					</form>
+					{{#if viewAlt}}
+						<form id="filterbutton">
+							<button id="filter-dropdown">Filters</button>
+							<div class="filter-tooltip">
+								<div class="tooltip-rows">
+									<div class="tooltip-flexbox">
+										<p>Dietary restriction </p>
+										<input type="radio" name="radio" id="none">None</input>
+										<input type="radio" name="radio" id="vegan">Vegan</input>
+										<input type="radio" name="radio" id="nutfree">Nut free</input>
+										<input type="radio" name="radio" id="glutenfree">Gluten free</input>
+									</div>
+			
+									<div class="tooltip-flexbox">
+										<p>Recipe details</p>
+										<input type="radio" name="radio2" id="all">All</input>
+										<input type="radio" name="radio2" id="favorites">Favorites</input>
+										<input type="radio" name="radio2" id="completed">Recently completed</input>
+										<input type="radio" name="radio2" id="popular">Popular</input>
+									</div>
+								</div>
+								<button class="apply-filters" id="apply-filters">Apply Filters</button>
+							</div>
+						</div>
+						</form>
+					{{else}}
+						<form id="searchform">
+							<input id="searchbox" type="text" placeholder="Search for recipes or dietary restrictions">
+						</form>
+					{{/if}}
+					
 				</input>
 				</div>
 				<div class="type-getter" id="{{type}}"></div>
@@ -75,7 +103,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 				{{else}}
 					<div class="version-getter" id="A"></div>
 				{{/if}}	
-				
+				{{#if viewAlt}}
+					
+				{{else}}
 				<div class="recipe-header">
 
 					<div class="small-recipes">
@@ -87,6 +117,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 					</div>
 				</div>
 			</div>
+				{{/if}}
 
 			<div class="available-recipes">
 				{{#each recipes}}

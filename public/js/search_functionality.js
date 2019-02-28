@@ -11,9 +11,16 @@ function initializePage() {
 	console.log("Javascript connected!");
 	shouldShowType();
 	$('#searchform').submit(handleSearch);
-	$('#foryou').click(handleForYou);
-	$('#completed').click(handleCompleted);
-	$('#favorites').click(handleFavorites);
+	$('a#foryou').click(handleForYou);
+	$('a#completed').click(handleCompleted);
+	$('a#favorites').click(handleFavorites);
+	$('#apply-filters').click(handleFilter);
+}
+
+function handleFilter(e){
+	e.preventDefault();
+	var option1 = $("input[name='radio']:checked").attr('id');
+	console.log(option1)
 }
 
 //if user redirected from profile, show favorites or completed
