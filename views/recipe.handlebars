@@ -26,7 +26,7 @@
 		</div>
 		<p>Time needed: {{recipe.time}}</p>
 		<div class="start">
-			<a id="start-button" href="{{recipe.id}}/normal/1"><button> Start </button></a>
+			<a id="start-button" href="{{recipe.id}}/normal/1"><button> Start </button></a>	
 		</div>
 		<div class="lists">
 			<div class="ingredients-content">
@@ -54,17 +54,14 @@
 			</ol>
 		</div>
 		</div>
-		<div class="footer">
-			<div class="buttons">
-				<a href="/homepage">
-					<button > Home </button>
-				</a>
-				<a href="/profile">
-					<button> Profile </button>
-				</a>
-			</div>
-		</div>
+		{{#if viewAlt}}
+			{{> footer_B}}
+		{{else}}
+			{{> footer_A}}
+		{{/if}}
+
 	</div>
+
 
 	<div class="id-getter" id="{{recipe.id}}"></div>
 

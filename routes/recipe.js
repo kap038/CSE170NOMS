@@ -3,6 +3,12 @@ var data = require('../data.json');
 exports.view = function(req, res){
 
   var id = req.params.id;
+  var version = req.params.v;
+ 
+  var viewAlt = false;
+  if(version == "B"){
+    viewAlt = true;
+  } 
 
   //loop thru and find the recipe matching this name
   index = 0;
@@ -25,6 +31,7 @@ exports.view = function(req, res){
   res.render('recipe', {
     'recipeName': data.recipes[index].name,
     'recipe': data.recipes[index],
+    'viewAlt': viewAlt,
     'instructions':data.recipes[index].instructions,
     'ingredients': data.recipes[index].ingredients,
     'alternatives': alternatives,

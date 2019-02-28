@@ -74,11 +74,7 @@
 			<div class="available-recipes">
 				{{#each recipes}}
 				<div class="recipe">
-						{{#if viewAlt}}
-							<a class="recipe-link" id="{{id}}" href="B/recipe/{{id}}">
-						{{else}}
-							<a class="recipe-link" id="{{id}}" href="A/recipe/{{id}}">
-						{{/if}}		
+						<a class="recipe-link" id="{{id}}" href="{{../version}}/recipe/{{id}}">
 							<img src={{imageURL}} class="img-responsive recipe-img">
 								 <h5>{{name}}</h5>
 								 <div class="recipe-tags">
