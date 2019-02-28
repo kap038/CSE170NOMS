@@ -5,6 +5,13 @@ exports.view = function(req, res){
   var id = req.params.id;
   var type = req.params.type;
 
+  //get version for A/B testing
+  var version = req.params.v;
+  var viewAlt = false;
+  if(version == "B"){
+    viewAlt = true;
+  } 
+
   //loop thru and find the recipe matching this name
   index = 0;
   for(i = 0; i < data.recipes.length; i++){
@@ -15,16 +22,16 @@ exports.view = function(req, res){
   }
 
   var recipe = data.recipes[index];
-  var prevUrl = "/recipe/"+recipe.id+"/"+type+"/"+(step-1);
-  var nextUrl = "/recipe/"+recipe.id+"/"+type+"/"+(step+1);
+  var prevUrl = "/"+version+"/recipe/"+recipe.id+"/"+type+"/"+(step-1);
+  var nextUrl = "/"+version+"/recipe/"+recipe.id+"/"+type+"/"+(step+1);
 
   //if prevUrl would go out of bounds, take back to overview page
   if(step <= 1) {
-     prevUrl = "/recipe/"+recipe.id;
+     prevUrl = "/"+version+"/recipe/"+recipe.id;
   }
   //after recipe completion take user to overview page
   else if(step >= recipe.instructions.length) {
-     nextUrl = "/recipe/"+recipe.id+"/"+type+"/complete";
+     nextUrl = "/"+version+"/recipe/"+recipe.id+"/"+type+"/complete";
   } 
 
   //don't render out of bounds instructions
@@ -60,7 +67,9 @@ exports.view = function(req, res){
     'recipe': recipe,
     'ingredients': recipe.ingredients,  //list of ingredients
     'instruction': instruction,  //list of instructions
-    'total-steps': recipe.instructions.length
+    'total-steps': recipe.instructions.length,
+    'viewAlt': viewAlt,
+    'version': version
   });
 };
 
@@ -68,6 +77,11 @@ exports.view = function(req, res){
 exports.complete = function(req, res){
   var id = req.params.id;
   var type = req.params.type;
+  var version = req.params.v;
+  if(version == "B"){
+    viewAlt = true;
+  } 
+
   //loop thru and find the recipe matching this name
   index = 0;
   for(i = 0; i < data.recipes.length; i++){
@@ -79,11 +93,12 @@ exports.complete = function(req, res){
 
   var recipe = data.recipes[index];
   var step = recipe.instructions.length;
-  var prevUrl = "/recipe/"+recipe.id+"/"+type+"/"+(step);
+  var prevUrl = "/"+version+"/recipe/"+recipe.id+"/"+type+"/"+(step);
   
   res.render('complete', {
     'recipe': recipe, 
-    'prevUrl': prevUrl
+    'prevUrl': prevUrl,
+    'viewAlt': viewAlt
   });
 
 };

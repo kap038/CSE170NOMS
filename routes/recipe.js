@@ -3,8 +3,9 @@ var data = require('../data.json');
 exports.view = function(req, res){
 
   var id = req.params.id;
+
+  //get version for A/B testing
   var version = req.params.v;
- 
   var viewAlt = false;
   if(version == "B"){
     viewAlt = true;
