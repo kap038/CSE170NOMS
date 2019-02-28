@@ -175,15 +175,17 @@ function getMatches(input, json) {
 
 //display a given array of recipes matching category
 function displayList(matches){
-	 		if(matches.length == 0){
-  			var html = "<div>Sorry, no matches found.</div>";
-  			$("#available-recipes").html(html);
+		
+ 		if(matches.length == 0){
+			var html = "<div>Sorry, no matches found.</div>";
+			$("#available-recipes").html(html);
   		} else {
   			var i;
 	  		//render matching results
 	  		for(i = 0; i < matches.length; i++){
 	  			//$("ul.ingredients").html("<li>"+matches[i].ingredient+"</li>");
 	  			var match = matches[i];
+	  			var button = $.parseHTML('{{> homepage-template}}')
 	  			var html = '<div id='+match.id+' class="recipe-list">'+
 					'<div class="recipe">'+
 						'<a class="recipe-link" id="'+match.id+'" href="recipe/'+match.id+'">'+
