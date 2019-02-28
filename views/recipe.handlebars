@@ -12,7 +12,11 @@
 	<div class="main">
 	<div class="body">
 		<div class="header-back">
-			<a href="/homepage">
+			{{#if viewAlt}}
+				<a href="/homepage_B">
+			{{else}}
+				<a href="/homepage_A">
+			{{/if}}
 			<button><img class="back-button" src="https://img.icons8.com/ios/100/ffffff/left-filled.png"></button>
 			</a>
 				<h1>{{recipeName}}</h1>
@@ -26,7 +30,7 @@
 		</div>
 		<p>Time needed: {{recipe.time}}</p>
 		<div class="start">
-			<a id="start-button" href="{{recipe.id}}/normal/1"><button> Start </button></a>
+			<a id="start-button" href="{{recipe.id}}/normal/1"><button> Start </button></a>	
 		</div>
 		<div class="lists">
 			<div class="ingredients-content">
@@ -54,17 +58,14 @@
 			</ol>
 		</div>
 		</div>
-		<div class="footer">
-			<div class="buttons">
-				<a href="/homepage">
-					<button > Home </button>
-				</a>
-				<a href="/profile">
-					<button> Profile </button>
-				</a>
-			</div>
-		</div>
+		{{#if viewAlt}}
+			{{> footer_B}}
+		{{else}}
+			{{> footer_A}}
+		{{/if}}
+
 	</div>
+
 
 	<div class="id-getter" id="{{recipe.id}}"></div>
 

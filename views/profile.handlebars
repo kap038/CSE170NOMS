@@ -25,13 +25,21 @@
 	</div>
 
 	<div class="profilebuttons">
-		<a href="homepage?type=completed" id="completed">
+		{{#if viewAlt}}
+			<a href="/homepage_B?type=completed" id="completed">
+		{{else}}
+			<a href="/homepage_A?type=completed" id="completed">
+		{{/if}}
 			<p>Completed Recipes</p>
 		</a>
 	</div>
 
 	<div class="profilebuttons">
-		<a href="homepage?type=favorites" id="favorites">
+		{{#if viewAlt}}
+			<a href="/homepage_B?type=completed" id="favorites">
+		{{else}}
+			<a href="/homepage_A?type=completed" id="favorites">
+		{{/if}}
 			<p>Favorite Recipes</p>
 		</a>
 	</div>
@@ -54,16 +62,11 @@
 		</a>
 	</div>
 
-	<div class="footer">
-		<div class="buttons">
-			<a href="homepage">
-				<button>Home</button>
-			</a>
-			<a href="profile">
-				<button>Profile</button>
-			</a>
-		</div>
-	</div>
+	{{#if viewAlt}}
+		{{> footer_B}}
+	{{else}}
+		{{> footer_A}}
+	{{/if}}
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.js"></script>

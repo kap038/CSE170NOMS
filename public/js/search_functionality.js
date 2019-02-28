@@ -11,9 +11,16 @@ function initializePage() {
 	console.log("Javascript connected!");
 	shouldShowType();
 	$('#searchform').submit(handleSearch);
-	$('#foryou').click(handleForYou);
-	$('#completed').click(handleCompleted);
-	$('#favorites').click(handleFavorites);
+	$('a#foryou').click(handleForYou);
+	$('a#completed').click(handleCompleted);
+	$('a#favorites').click(handleFavorites);
+	$('#apply-filters').click(handleFilter);
+}
+
+function handleFilter(e){
+	e.preventDefault();
+	var option1 = $("input[name='radio']:checked").attr('id');
+	console.log(option1)
 }
 
 //if user redirected from profile, show favorites or completed
@@ -175,30 +182,43 @@ function getMatches(input, json) {
 
 //display a given array of recipes matching category
 function displayList(matches){
-		
- 		if(matches.length == 0){
-			var html = "<div>Sorry, no matches found.</div>";
-			$("#available-recipes").html(html);
+	 	if(matches.length == 0){
+  			var html = "<div>Sorry, no matches found.</div>";
+  			$(".available-recipes").html(html);
   		} else {
   			var i;
+  			var j;
+  			var version = $(".version-getter").attr('id');
 	  		//render matching results
 	  		for(i = 0; i < matches.length; i++){
 	  			//$("ul.ingredients").html("<li>"+matches[i].ingredient+"</li>");
 	  			var match = matches[i];
-	  			var button = $.parseHTML('{{> homepage-template}}')
+	  			var tags = [];
+	  			//create tags string
+	  			for(j = 0; j < match.tags.length; j++){
+	  				tags += '<p class="tag" class="recipe-tag"><em>#'+match.tags[j]+'</em></p>'
+	  			}
 	  			var html = '<div id='+match.id+' class="recipe-list">'+
 					'<div class="recipe">'+
-						'<a class="recipe-link" id="'+match.id+'" href="recipe/'+match.id+'">'+
-						'<h3>'+match.name+'</h3>'+
-						'<img src='+match.imageURL+' class="img-responsive">'+
-						'<p>Difficulty: '+match.difficulty+'</p>'+
-						'<p>Time: '+match.time+'</p> </a> <hr> </div> </div>'
+						'<a class="recipe-link" id="'+match.id+'" href='+version+'/recipe/'+match.id+'>'+
+						'<img src='+match.imageURL+' class="img-responsive recipe-img">'+
+						'<h5>'+match.name+'</h5>'+
+						'<div class="recipe-tags">'+ tags +'</div>'+
+						 '<div class="recipe-details"><p class="detail">'+
+									'<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 224 224" class="svg-style">'+
+										'<g id="original-icon" fill="#666666"><path class="weight-icon"></path></g></svg>'+
+									match.difficulty+
+									'</p><p class="detail" id="time">'+
+									'<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 224 224" class="svg-style">'+
+										'<g fill="#666666"><path class="time-icon"></path></g></svg>'+
+									match.time+
+									'</p></div>'
 
 				//first item needs to replace existing html
 	  			if(i == 0) {
-	  				$("#available-recipes").html(html);
+	  				$(".available-recipes").html(html);
 	  			} else {
-	  				$("#available-recipes").append(html);
+	  				$(".available-recipes").append(html);
 	  			}
 	  		}
   		}

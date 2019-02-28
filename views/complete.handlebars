@@ -22,7 +22,12 @@
 				<a href="{{prevUrl}}">
 					<button>Previous</button>
 				</a>
-				<a href="/homepage">
+				{{#if viewAlt}}
+					<a href="/homepage_B">
+				{{else}}
+					<a href="/homepage_A">
+				{{/if}}
+				
 					<button> Finish </button>
 				</a>
 			</div>

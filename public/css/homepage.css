@@ -73,4 +73,10 @@
   height: 395px;
   background-color: #FFB852;
   margin-top: 10px;
+  margin: 10px;
+}
+
+.available-recipes {
+  display: flex;
+  flex-wrap: wrap;
 }

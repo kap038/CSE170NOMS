@@ -40,12 +40,20 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', login.view);
-app.get('/profile', profile.view);
-app.get('/recipe', recipe.view);
-app.get('/recipe/:id/:type/complete', recipe_steps.complete);
-app.get('/recipe/:id/:type/:step', recipe_steps.view);
-app.get('/recipe/:id', recipe.view);
-app.get('/homepage', homepage.view);
+app.get('/:v/profile', profile.view);
+app.get('/:v/recipe', recipe.view);
+app.get('/:v/recipe/:id/:type/complete', recipe_steps.complete);
+app.get('/:v/recipe/:id/:type/:step', recipe_steps.view);
+app.get('/:v/recipe/:id', recipe.view);
+
+app.get('/:v/profile', profile.view);
+app.get('/:v/recipe', recipe.view);
+app.get('/:v/recipe/:id/:type/complete', recipe_steps.complete);
+app.get('/:v/recipe/:id/:type/:step', recipe_steps.view);
+app.get('/:v/recipe/:id', recipe.view);
+
+app.get('/homepage', homepage.view_A);
+app.get('/homepage_A', homepage.view_A);
 app.get('/homepage_B', homepage.view_B);
 app.get('/signup', signup.view);
 app.get('/json/:id', recipe.recipeJson);
