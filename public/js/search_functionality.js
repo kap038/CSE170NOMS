@@ -40,7 +40,7 @@ function handleFilter(e){
  		displayList(matches)
 
   	});
-	
+
 }
 
 //if user redirected from profile, show favorites or completed
@@ -226,7 +226,7 @@ function getMatches(input, json) {
 //display a given array of recipes matching category
 function displayList(matches){
 	 	if(matches.length == 0){
-  			var html = "<div>Sorry, no matches found.</div>";
+  			var html = "<div>No recipes found. Explore more recipes now!</div>";
   			$(".available-recipes").html(html);
   		} else {
   			var i;
