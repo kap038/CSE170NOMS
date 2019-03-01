@@ -66,7 +66,10 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 				<div class="search-container">
 					{{#if viewAlt}}
 						<form id="filterbutton">
-							<button id="filter-dropdown">Filters</button>
+							<button id="filter-dropdown">
+								<div class="filter-button-text">
+									<div>Filters</div><div>+</div></div>
+							</button>
 							<div class="filter-tooltip" id = "filter-tooltip">
 								<div class="tooltip-rows">
 									<div class="tooltip-flexbox">
@@ -87,7 +90,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 										<input type="radio" name="radio2" id="hard">Hard</input>
 									</div>
 								</div>
-								<button class="apply-filters" id="apply-filters">Apply Filters</button>
+								<div>
+									<button class="apply-filters" id="apply-filters">Apply Filters</button>
+								</div>
 							</div>
 						</div>
 						</form>
