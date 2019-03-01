@@ -41,6 +41,7 @@ function changeUser(response) {
 
   $("#photo").attr("src", picture);
   $("#name").text(name);
+  window.location.href = "/homepage";
   // $("#name").text(response.name);
   // $("#photo").attr("src", response.picture.data.url);
 }
