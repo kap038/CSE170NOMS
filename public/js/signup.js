@@ -1,12 +1,11 @@
 $(document).ready(function() {
   initializePage();
-  localStorage.clear();
 })
 
 function initializePage() {
 	console.log("Javascript connected!");
 	$('.select-type').click(handleRadio);
-  $('#signup').click(handleSignup);
+  // $('#signup').click(handleSignup);
 }
 
 function handleRadio(e){
@@ -14,12 +13,12 @@ function handleRadio(e){
 	localStorage.setItem("diet", type)
 
 }
-
-function handleSignup(){
-  //save username and password to local storage
-  name = $("#name").val();
-  localStorage.setItem("name", name);
-  console.log(name);
-  window.location.href = "/homepage";
-
-}
+//
+// function handleSignup(){
+//   //save username and password to local storage
+//   name = $("#name").val();
+//   localStorage.setItem("name", name);
+//   console.log(name);
+//   window.location.href = "/homepage";
+//
+// }

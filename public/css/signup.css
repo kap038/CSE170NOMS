@@ -25,9 +25,8 @@ body {
   font-size: 1.5rem;
 }
 
-.input-container
+ /* .input-container
 {
-	/* width: 50% */
 	position: relative;
   margin-bottom: 1rem;
 }
@@ -50,7 +49,6 @@ body {
   display: block;
   width: 100%;
   margin-bottom: 0;
-  /* Override default `<label>` margin */
   line-height: 1.5;
   color: #495057;
   border: 1px solid transparent;
@@ -60,7 +58,7 @@ body {
 ::placeholder
 {
     color: #DCDCDC;
-}
+}  */
 
 .diet-container{
 	text-align:left;

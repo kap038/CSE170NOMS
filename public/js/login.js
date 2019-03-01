@@ -7,6 +7,7 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
   $('#login').click(handleLogin);
+  $('#signup').click(handleSignup);
 }
 
 function handleLogin(){
@@ -15,5 +16,14 @@ function handleLogin(){
   localStorage.setItem("name", name);
   console.log(name);
   window.location.href = "/homepage";
+
+}
+
+function handleSignup(){
+  //save username and password to local storage
+  name = $("#username").val();
+  localStorage.setItem("name", name);
+  console.log(name);
+  window.location.href = "/signup";
 
 }
