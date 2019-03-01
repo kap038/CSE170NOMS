@@ -125,6 +125,13 @@
 .filter-tooltip {
   width: 100%;
   background-color: #aecbfc;
+  z-index: 1;
+  display: none;
+}
+
+.filter-tooltip show{
+  
+  display: visible;
 }
 
 .tooltip-flexbox {
