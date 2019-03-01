@@ -7,24 +7,21 @@
 }
 
 .accountinfo {
-	margin-top: 10px;
+	margin-left: 10px;
 	height: 150px;
   display: flex;
 	flex-direction: row;
-	border-radius: 25px;
-  border: 2px;
-  border-color: black;
-  border-style: solid;
 }
 
 .accountinfo img{
-	border-radius: 50%;
 	display:flex;
 	flex-grow: 2;
 	height: auto;
   width: auto;
   max-width: 100px;
   max-height: 100px;
+  border-radius: 50px;
+  padding: 10px;
 }
 
 .accounttext{
@@ -32,24 +29,20 @@
 	flex-grow:3;
 }
 
-.profilebuttons {
-	margin-top: 10px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 25px;
-  /*background: #FFB852;*/
-  border: 2px;
-  border-color: black;
-  border-style: solid;
+button {
+	margin: 0px 0px 10px 10px;
+	background-color: orange;
+	padding: 0px 10px 0px 10px;
 }
 
-.profbutton {
-	display: flex;
-	flex-direction: row;
-	text-align: center;
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }

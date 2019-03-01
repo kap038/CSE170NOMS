@@ -1,3 +1,7 @@
+body {
+  background-color: #ceedff;
+}
+
 .main {
   /*keep things centered*/
     max-width: 500px;
@@ -211,4 +215,3 @@ a:hover, a:focus {
   fill:white;
   margin-right: 5px;
 }
-

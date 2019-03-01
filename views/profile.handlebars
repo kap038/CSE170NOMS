@@ -9,10 +9,11 @@
 	<link href="/css/global.css" rel="stylesheet">
 </head>
 <body>
-	<div class="header">
+	<div class="header" style="margin: 0px 0px 0px 0px;">
 		<h1>Profile</h1>
 	</div>
 
+	<div class="main" style="height: 100%;">
 	<div class="accountinfo">
 		<div id="facebookPhoto" class="profile">
 			<img id="photo" class='img-responsive' src="http://hci.stanford.edu/courses/cs547/Resources/Pictures/klemmer_grad.jpg" />
@@ -56,11 +57,12 @@
 		</div>
 	</div>
 
-	<div class="profilebuttons">
+	<div class="sign-out">
 		<a href="/">
 			<p>Sign out</p>
 		</a>
 	</div>
+</div>
 
 	{{#if viewAlt}}
 		{{> footer_B}}

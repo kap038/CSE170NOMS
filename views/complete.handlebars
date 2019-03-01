@@ -16,20 +16,37 @@
 		</div>
 
 		<div class="get-recipe-id" id="{{recipe.id}}"></div>
-		<div>good job lol </div>
+
+		<div style="height: 100%;">
+				<!-- catbug -->
+			<img src="http://i.imgur.com/nbtpTSf.gif" style="width: 320px; height: auto; position: fixed; top: 13%; left: 18%;">
+
+			<!-- confetti gif -->
+			<img src="https://i.gifer.com/6ob.gif" style="position: fixed;margin-left:0%;width:50%;height:auto;">
+			<img src="https://i.gifer.com/6ob.gif" style="position: fixed;margin-left:45%;width:50%;height:auto;">
+			<!-- big finish button -->
+
+					{{#if viewAlt}}
+						<a href="/homepage_B">
+					{{else}}
+						<a href="/homepage_A">
+					{{/if}}
+
+					<button style="position: relative;margin-left:20%;margin-top:60%;padding:10px 100px 10px 100px;font-size: 30;color:white;background-color:orange;">FINISH</button>
+				</a>
+		</div>
+
 		<div class="footer">
 			<div class="buttons">
 				<a href="{{prevUrl}}">
 					<button>Previous</button>
 				</a>
-				{{#if viewAlt}}
+				<!-- {{#if viewAlt}}
 					<a href="/homepage_B">
 				{{else}}
 					<a href="/homepage_A">
 				{{/if}}
-				
-					<button> Finish </button>
-				</a>
+				</a> -->
 			</div>
 		</div>
 	</div>
