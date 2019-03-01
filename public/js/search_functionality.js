@@ -20,7 +20,27 @@ function initializePage() {
 function handleFilter(e){
 	e.preventDefault();
 	var option1 = $("input[name='radio']:checked").attr('id');
-	console.log(option1)
+	var option2 = $("input[name='radio2']:checked").attr('id');
+
+	var url = "/json/"
+	$.get(url, function(result) {
+		//get overlap in matches
+  		var matches1 = getMatches(option1, result);
+  		var matches2 = getMatches(option2, result);
+  		var matches = [];
+
+  		if(option2 == "all"){
+  			matches = matches1;
+  		} else {
+  			//matches = overlap of the two arrays
+  			matches = matches1.filter(value => -1 !== matches2.indexOf(value));
+  		}
+  		console.log(option2)
+  		//add any recipes that match the user's keyword
+ 		displayList(matches)
+
+  	});
+	
 }
 
 //if user redirected from profile, show favorites or completed
@@ -167,6 +187,29 @@ function getMatches(input, json) {
 	//all recipes have normal
 	if(input === "normal"){
 		return recipes;
+	}
+
+	//get favorites list from localStorage
+	if(input === "favorites"){
+		var favs = (localStorage.getItem("favorites") || '[]'); //if null, init to []
+		for(i = 0; i < recipes.length; i++){
+			if(favs.includes(recipes[i].id)) {
+				matches.push(recipes[i]);
+			}
+		}
+		return matches;
+	}
+
+	//get completed recipes from localStorage
+	if(input === "completed"){
+		var favs = (localStorage.getItem("completed") || '[]'); //if null, init to []
+		for(i = 0; i < recipes.length; i++){
+			if(favs.includes(recipes[i].id)) {
+				matches.push(recipes[i]);
+			}
+		}
+		return matches;
+
 	}
 
 	for(i = 0; i < recipes.length; i++) {

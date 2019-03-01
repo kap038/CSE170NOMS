@@ -71,7 +71,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 								<div class="tooltip-rows">
 									<div class="tooltip-flexbox">
 										<p>Dietary restriction </p>
-										<input type="radio" name="radio" id="none">None</input>
+										<input type="radio" name="radio" id="normal" checked="checked">None</input>
 										<input type="radio" name="radio" id="vegan">Vegan</input>
 										<input type="radio" name="radio" id="nutfree">Nut free</input>
 										<input type="radio" name="radio" id="glutenfree">Gluten free</input>
@@ -79,10 +79,12 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			
 									<div class="tooltip-flexbox">
 										<p>Recipe details</p>
-										<input type="radio" name="radio2" id="all">All</input>
+										<input type="radio" name="radio2" id="all" checked=checked>All</input>
 										<input type="radio" name="radio2" id="favorites">Favorites</input>
 										<input type="radio" name="radio2" id="completed">Recently completed</input>
-										<input type="radio" name="radio2" id="popular">Popular</input>
+										<input type="radio" name="radio2" id="easy">Easy</input>
+										<input type="radio" name="radio2" id="medium">Medium</input>
+										<input type="radio" name="radio2" id="hard">Hard</input>
 									</div>
 								</div>
 								<button class="apply-filters" id="apply-filters">Apply Filters</button>
