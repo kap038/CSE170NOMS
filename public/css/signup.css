@@ -1,63 +1,137 @@
-.signup-container
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+body {
+  background: #ceedff;
+	text-align:center;
+  /* background: linear-gradient(to right, #0062E6, #33AEFF); */
+}
+
+.content
 {
-	margin:20px;
-	padding: 20px;
-    max-width: 500px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
-	border-radius: 25px;
+	margin:25px;
+	padding: 25px;
+  max-width: 325px;
+	border: 0;
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+	background-color: white;
+	width: 100%;
+	padding: 2rem;
+	margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.input-container
+{
+	/* width: 50% */
+	position: relative;
+  margin-bottom: 1rem;
 }
 
 .input-container input
 {
-	width: 8%;
+	height: auto;
+  border-radius: 2rem;
+}
+
+.input-container>input,
+.input-container>label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.input-container>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
 }
 
 ::placeholder
 {
     color: #DCDCDC;
 }
-#username,#password
-{
-    width: 270%;
+
+.diet-container{
+	text-align:left;
 }
 
-input[type="password"]{
-	font:small-caption;font-size:16px;
+.top-label {
+  display: block;
+  margin: 10px 0;
 }
 
-.new-info
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+input[type="checkbox"], input[type="radio"] {
+  position: absolute;
+  left: -9999px;
 }
 
-#signup-button
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
+.side-label {
+  display: block;
+  position: relative;
+  margin: 10px 0;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.side-label::before, .side-label::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="radio"] + .side-label::before,
+input[type="radio"] + .side-label::after {
+  border-radius: 50%;
+}
+
+.side-label::before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+}
+
+input:focus + .side-label::before {
+  border-color: #9ab593;
+}
+
+.side-label::after {
+  display: none;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  background-color: #9ab593;
+}
+
+input:checked + .side-label::after {
+  display: block;
+}
+
+.blocked {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, .3);
 }
 
 button
 {
-    background-color: orange;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    color: white;
-    font-size: 16;
-}
-label
-{
-  display: inline-block;
-  width: 140px;
-  text-align: right;
-}​
-input[type="radio"]{
-    margin: 0px 10px 0px 0px;
+	color: white;
+  background-color: #FFB852;
+	font-size: 100%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
 }

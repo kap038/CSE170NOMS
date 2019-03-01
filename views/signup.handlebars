@@ -9,41 +9,47 @@
 	<link href="/css/global.css" rel="stylesheet">
 </head>
 <body>
-    <div class="signup-container">
+
         <div class="header">
             <h1>Sign Up with Noms</h1>
         </div>
         <div class="content">
-            <div class="signup-container content">
+
 
                     <div class="input-container" id="username">
-                        <label>Create Username:</label>
-                        <input id="name" type="text" name="username" placeholder="cookingmamas123">
-                        </input>
+											<input id="username" type="text" placeholder=" Create Username">
+										</input>
                     </div>
 
                     <div class="input-container" id="password">
-                        <label>Enter Password:</label>
-                        <input id="pw" type="password" name="password" placeholder="yummybunz" required>
-                        </input>
+											<input id="username" type="password" placeholder=" Create Password">
+										</input>
                     </div>
 
 
-                    <div class="input-container" id="restriction">
-                         <label>Select Dietary Restrictions:</label>
-                         <input type="radio" class="select-type" name="restriction" id="vegan"> None
-                         <input type="radio"  class="select-type" name="restriction" id="nutfree"> Nut free
-						<input type="radio"  class="select-type" name="restriction" id="vegan"> Vegan
-                         <input type="radio"  class="select-type" name="restriction" id="glutenfree"> Gluten free
+                    <div class="diet-container" id="restriction">
+                         <label class="top-label">Select Your Dietary Restriction:</label>
+
+												 <input type="radio" class="select-type" name="restriction" id="all">
+												 <label for="all" class="side-label">None</label>
+
+                         <input type="radio"  class="select-type" name="restriction" id="nutfree">
+												 <label for="nutfree" class="side-label">Nut free</label>
+
+												 <input type="radio"  class="select-type" name="restriction" id="vegan">
+												 <label for="vegan" class="side-label">Vegan</label>
+
+                         <input type="radio"  class="select-type" name="restriction" id="glutenfree">
+												 <label for="glutenfree" class="side-label">Gluten Free</label>
                     </div>
 
 
                     <div class="buttons" id="signup">
 												<button>Sign up!</button>
                     </div>
-            </div>
+
         </div>
-    </div>
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="/js/signup.js"></script>
 </body>

@@ -67,6 +67,11 @@ body {
   border-radius: .25rem;
 }
 
+::placeholder
+{
+    color: #DCDCDC;
+}
+
 #login {
   color: white;
   background-color: #FFB852;
