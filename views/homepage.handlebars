@@ -66,28 +66,53 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 				<div class="search-container">
 					{{#if viewAlt}}
 						<form id="filterbutton">
-							<button id="filter-dropdown">Filters</button>
+							<button id="filter-dropdown">
+								<div class="filter-button-text">
+									<div>Filters</div><div>+</div></div>
+							</button>
 							<div class="filter-tooltip" id = "filter-tooltip">
 								<div class="tooltip-rows">
 									<div class="tooltip-flexbox">
-										<p>Dietary restriction </p>
-										<input type="radio" name="radio" id="normal" checked="checked">None</input>
-										<input type="radio" name="radio" id="vegan">Vegan</input>
-										<input type="radio" name="radio" id="nutfree">Nut free</input>
-										<input type="radio" name="radio" id="glutenfree">Gluten free</input>
+										<h3>Dietary restriction </h3>
+										<label for="all" class="side-label">None
+											<input type="radio" name="radio" id="normal" checked="checked"></input>
+										</label>
+										<label for="all" class="side-label">Vegan
+											<input type="radio" name="radio" id="vegan"></input>
+										</label>
+										<label for="all" class="side-label">Nut Free
+											<input type="radio" name="radio" id="nutfree"></input>
+										</label>
+										<label for="all" class="side-label">Gluten Free
+											<input type="radio" name="radio" id="glutenfree"></input>
+										</label>
 									</div>
 			
 									<div class="tooltip-flexbox">
-										<p>Recipe details</p>
-										<input type="radio" name="radio2" id="all" checked=checked>All</input>
-										<input type="radio" name="radio2" id="favorites">Favorites</input>
-										<input type="radio" name="radio2" id="completed">Recently completed</input>
-										<input type="radio" name="radio2" id="easy">Easy</input>
-										<input type="radio" name="radio2" id="medium">Medium</input>
-										<input type="radio" name="radio2" id="hard">Hard</input>
+										<h3>Recipe details</h3>
+										<label for="all" class="side-label">All
+											<input type="radio" name="radio2" id="all" checked="checked"></input>
+										</label>
+										<label for="all" class="side-label">Favorites
+											<input type="radio" name="radio2" id="favorites"></input>
+										</label>
+										<label for="all" class="side-label">Recently Completed
+											<input type="radio" name="radio2" id="completed"></input>
+										</label>
+										<label for="all" class="side-label">Easy
+											<input type="radio" name="radio2" id="easy"></input>
+										</label>
+										<label for="all" class="side-label">Medium
+											<input type="radio" name="radio2" id="medium"></input>
+										</label>
+										<label for="all" class="side-label">Hard
+											<input type="radio" name="radio2" id="hard"></input>
+										</label>
 									</div>
 								</div>
-								<button class="apply-filters" id="apply-filters">Apply Filters</button>
+								<div>
+									<button class="apply-filters" id="apply-filters">Apply Filters</button>
+								</div>
 							</div>
 						</div>
 						</form>
