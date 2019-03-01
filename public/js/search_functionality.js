@@ -10,11 +10,17 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
 	shouldShowType();
+	$('#filter-dropdown').click(handleFilterButton);
 	$('#searchform').submit(handleSearch);
 	$('a#foryou').click(handleForYou);
 	$('a#completed').click(handleCompleted);
 	$('a#favorites').click(handleFavorites);
 	$('#apply-filters').click(handleFilter);
+}
+
+function handleFilterButton(e){
+	e.preventDefault();
+	document.getElementById("filter-tooltip").classList.toggle("show");
 }
 
 function handleFilter(e){
