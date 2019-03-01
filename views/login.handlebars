@@ -19,39 +19,28 @@
 	<div class="header">
 		<h1>Start Cooking!</h1>
 	</div>
+
+
+
 	<div class="login-container">
 		<div class="input-container">
-			<label>Username:</label>
-				<input id="username" type="text" placeholder="cookingmama123">
+				<input id="username" type="text" placeholder="Username">
 			</input>
 		</div>
 		<div class="input-container">
-			<label>Password:</label>
-			<input id="password" type="password" placeholder="yummybunz">
+			<input id="password" type="password" placeholder="Password">
 			</input>
 		</div>
 		<div class="signup-container">
 				<button id="login">Login</button>
-			<h5>First time here?</h5>
 			<a href="signup">
 				<button id="signup">Sign Up</button>
 			</a>
 		</div>
-		<div class="start-cooking">
 
-			<img id="photo" class='img-responsive' src="http://hci.stanford.edu/courses/cs547/Resources/Pictures/klemmer_grad.jpg" />
-
-			<h1>Welcome back, </h1><h1 id="name">Bob</h1>
-			<a href="homepage">
-				<button>Start Cooking!</button>
-			</a>
-
-		</div>
 		<h5 class="fblogin">
-			Login through Facebook
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-		</fb:login-button>
-	</h5>
+			<div class="fb-login-button" data-size="medium" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false" id="fblogin" scope="public_profile,email" onlogin="checkLoginState();"></div>
+		</h5>
 	</div>
 
 </body>

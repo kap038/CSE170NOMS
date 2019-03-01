@@ -6,7 +6,6 @@ $(document).ready(function() {
 
 function initializePage() {
 	console.log("Javascript connected!");
-  $(".start-cooking").hide();
   $('#login').click(handleLogin);
 }
 
