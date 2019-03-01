@@ -13,12 +13,3 @@ function handleRadio(e){
 	localStorage.setItem("diet", type)
 
 }
-//
-// function handleSignup(){
-//   //save username and password to local storage
-//   name = $("#name").val();
-//   localStorage.setItem("name", name);
-//   console.log(name);
-//   window.location.href = "/homepage";
-//
-// }
