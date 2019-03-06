@@ -10,7 +10,7 @@ exports.view = function(req, res){
   var viewAlt = false;
   if(version == "B"){
     viewAlt = true;
-  } 
+  }
 
   //loop thru and find the recipe matching this name
   index = 0;
@@ -32,15 +32,20 @@ exports.view = function(req, res){
   //after recipe completion take user to overview page
   else if(step >= recipe.instructions.length) {
      nextUrl = "/"+version+"/recipe/"+recipe.id+"/"+type+"/complete";
-  } 
+  }
+
+  //render pictures
+  var picture = recipe.pictures[step];
 
   //don't render out of bounds instructions
   if(step <= recipe.instructions.length) {
 
     //find correct instructions from given diet type
     var instruction;
+
     //find an alternative instruction matching mode
     var alt = (recipe.instructions[step-1].alt) || '[]'
+
     //search alts for thing to add
     var j;
     var found = false;
@@ -54,7 +59,7 @@ exports.view = function(req, res){
        instruction = (recipe.instructions[step-1].instruction)
     }
   }
-    
+
 
 
   res.render('recipe_steps', {
@@ -67,6 +72,7 @@ exports.view = function(req, res){
     'recipe': recipe,
     'ingredients': recipe.ingredients,  //list of ingredients
     'instruction': instruction,  //list of instructions
+    'picture': picture, //list of pictures
     'total-steps': recipe.instructions.length,
     'viewAlt': viewAlt,
     'version': version
@@ -81,7 +87,7 @@ exports.complete = function(req, res){
   var viewAlt = false
   if(version == "B"){
     viewAlt = true;
-  } 
+  }
 
 
   //loop thru and find the recipe matching this name
@@ -96,9 +102,9 @@ exports.complete = function(req, res){
   var recipe = data.recipes[index];
   var step = recipe.instructions.length;
   var prevUrl = "/"+version+"/recipe/"+recipe.id+"/"+type+"/"+(step);
-  
+
   res.render('complete', {
-    'recipe': recipe, 
+    'recipe': recipe,
     'prevUrl': prevUrl,
     'viewAlt': viewAlt
   });

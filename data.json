@@ -2,6 +2,13 @@
 	"recipes": [
 		{ "name": "Scrambled Eggs",
 			"imageURL": "https://www.theflavorbender.com/wp-content/uploads/2018/08/Scrambled-Eggs-Featured-500x375.jpg",
+			"pictures":[
+				{"picture":"https://www.incredibleegg.org/wp-content/uploads/how-to-make-baked-scrambled-eggs-930x550.jpg"},
+				{"picture":"https://media1.popsugar-assets.com/files/thumbor/5r-Mhb-mQmR67JhzOlYjp20Hs20/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2016/12/14/983/n/1922195/31fba80a3e189e04_paula-deen-scrambled-eggs-first/i/Melt-1-tablespoon-butter-1-tablespoon-bacon-grease.jpg"},
+				{"picture":"https://toriavey.com/images/2014/06/IMG_0162.jpg"},
+				{"picture":"https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201452_12.jpg?itok=sEzruvF_"},
+				{"picture":"http://aucdn.ar-cdn.com/recipes/originals/17a47fa0-b5c9-426e-b239-575c2e687fce.jpg"}
+			],
 			"id": "recipe1",
 			"difficulty": "easy",
 			"time": "5 minutes",
@@ -29,16 +36,19 @@
 			],
 			"instructions": [
 				{"instruction": "Beat eggs, milk, salt and pepper in medium bowl until blended.",
-				 "alt": [ 
+				 "alt": [
 					{"name": "vegan", "instruction": "Beat vegan egg material, soy milk, salt and pepper in medium bowl until blended."}
-				 ]},
-				{"instruction": "Heat butter in large nonstick skillet over medium heat until hot.", 
-				 "alt": [ 
+				]},
+				{"instruction": "Heat butter in large nonstick skillet over medium heat until hot.",
+				 "alt": [
 					{"name": "vegan", "instruction": "Heat vegan butter in large nonstick skillet over medium heat until hot"}
 				]},
-				{"instruction": "Pour in egg mixture. As eggs begin to set, Gently pull the eggs across the pan with a spatula, forming large soft curds."},
-				{"instruction": "Continue cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly."},
-				{"instruction": "Remove from heat and serve immediately."}
+				{"instruction": "Pour in egg mixture. As eggs begin to set, Gently pull the eggs across the pan with a spatula, forming large soft curds."
+				},
+				{"instruction": "Continue cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly."
+				},
+				{"instruction": "Remove from heat and serve immediately."
+				}
 			]
 		},
 		{ "name": "Molten Caramel Cakes",
@@ -103,18 +113,18 @@
 				{"instruction": "Heat oven to 400°F."},
 				{"instruction": "Grease 4 (6-ounce) custard cups; place onto ungreased baking sheet."},
 				{"instruction": "Sprinkle pecans into bottom of each cup; set aside.",
-				"alt": [ 
+				"alt": [
 						{"name": "nutfree", "instruction": "Sprinkle crispy rice cereal into bottom of each cup; set aside."}
 					]},
 				{"instruction": "Combine chocolate chips and butter in bowl. Microwave 45-60 seconds, stirring twice, until melted and smooth."},
 				{"instruction": "Add cream cheese; beat at medium speed until smooth. Set aside."},
 				{"instruction": "Combine brown sugar, eggs and vanilla in bowl; beat at medium speed until well mixed.",
-					"alt": [ 
+					"alt": [
 						{"name": "vegan", "instruction": "Combine brown sugar, flax powder, and vanilla in bowl; beat at medium speed until well mixed."}
 					]},
 				{"instruction": "Add chocolate mixture; continue beating until well mixed."},
 				{"instruction": "Add flour; beat at low speed until well mixed.",
-					"alt": [ 
+					"alt": [
 						{"name": "glutenfree", "instruction": "Add glutenfree flour; beat at low speed until well mixed."}
 					]},
 				{"instruction": "Divide batter evenly among prepared custard cups. Bake 13-15 minutes or until top is puffy and cracked in appearance but center is soft. Cool 5 minutes."},
@@ -338,11 +348,11 @@
 				{"instruction": "Meanwhile, in a medium pot of boiling salted water, cook pasta until just shy of al dente. Reserve about 1 cup (240ml) of the starchy pasta water, then drain pasta."},
 				{"instruction": "Add pasta to butter mixture, along with 1/2 cup (120ml) reserved pasta water. Increase heat to medium-high and cook, stirring and tossing to coat, until pasta is glazed in a satiny, emulsified sauce."},
 				{"instruction": "Add grated cheese and toss and stir rapidly until sauce thickens; if it becomes too tight and dry at any time, add more pasta-cooking water to loosen it sufficiently. Add lemon juice to taste, starting with 1 tablespoon (15ml), then adding more until desired tartness is reached. Season with salt and pepper.",
-				"alt": [ 
+				"alt": [
 						{"name": "vegan", "instruction": "Sprinkle nutritional yeast and toss and stir rapidly until sauce thickens; if it becomes too tight and dry at any time, add more pasta-cooking water to loosen it sufficiently. Add lemon juice to taste, starting with 1 tablespoon (15ml), then adding more until desired tartness is reached. Season with salt and pepper."}
 					]},
 				{"instruction": "Serve spaghetti right away, topping each serving with additional grated lemon zest and cheese.",
-				"alt": [ 
+				"alt": [
 						{"name": "vegan", "instruction": "Serve spaghetti right away, topping each serving with additional grated lemon zest and nutrtional yeast."}
 					]}
 			]

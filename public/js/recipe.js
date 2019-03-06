@@ -59,8 +59,6 @@ function handleComplete(e){
 }
 
 
-
-
 function changeRecipe(type){
   var id = $('.id-getter').attr('id');
   var url = "/json/"+id;
