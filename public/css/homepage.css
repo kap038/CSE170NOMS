@@ -5,6 +5,19 @@
   justify-content: center;
 }
 
+.backbutton button {
+  background: none;
+  border: none;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  padding-top: 15px;
+  left: 2%;
+  float: left;
+  position: absolute;
+}
+
+
 .top-container {
    padding: 20px;
 }

@@ -162,8 +162,8 @@ function handleSearch(e) {
 	//show back button
 	$('.backbutton').show();
 	//hide other buttons
-	$('.small-recipes').hide();
-	$('.search-container').hide();
+	//$('.small-recipes').hide();
+	//$('.search-container').hide();
 
 	var input = $('input#searchbox').val();
 	//case insensitive
