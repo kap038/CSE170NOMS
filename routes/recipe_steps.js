@@ -37,7 +37,7 @@ exports.view = function(req, res){
   //render pictures
   var picture = recipe.imageURL;
   if(recipe.pictures){
-    picture = recipe.pictures[step] || recipe.imageURL;
+    picture = recipe.pictures[step-1] || recipe.imageURL;
   }
   console.log(picture)
 
