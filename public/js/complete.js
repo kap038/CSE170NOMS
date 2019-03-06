@@ -12,7 +12,7 @@ function initializePage() {
 
 	var recipe = $(".get-recipe-id").attr("id");
 	console.log(recipe);
-	
+
 	//add recipe to completed list
 	var completed = JSON.parse(localStorage.getItem("completed"));
 
@@ -31,7 +31,7 @@ function initializePage() {
   	localStorage.setItem("completed", JSON.stringify(completed))
   	console.log(localStorage.getItem("completed"))
 
- 	
+
 }
 
 /*

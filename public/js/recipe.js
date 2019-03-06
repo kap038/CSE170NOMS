@@ -17,6 +17,8 @@ function initializePage() {
   $("button.dropbtn").click(clickDropdown);
  //child elements of this class
   $(".dropdown-content > a").click(handleSelect);
+	//complete a recipe
+	$("#complete-button").click(handleComplete);
 }
 
 // when dropdown button clicked, show and hide content
@@ -31,8 +33,33 @@ function handleSelect(e){
   e.preventDefault();
   var type = $(this).attr('id');
   changeRecipe(type)
-  
 }
+
+function handleComplete(e){
+	e.preventDefault();
+	//push recipe into completed recipes
+	var recipe = $(".id-getter").attr("id");
+	var completed = JSON.parse(localStorage.getItem("completed"));
+
+	//no recipes completed yet
+	if(completed == null){
+		completed = [];
+	}
+
+	//removes duplicates
+	var index = completed.indexOf(recipe)
+	if(index != -1){
+		completed.splice(index, 1);
+	}
+
+	completed.push(recipe)
+	localStorage.setItem("completed", JSON.stringify(completed))
+	console.log(localStorage.getItem("completed"))
+
+}
+
+
+
 
 function changeRecipe(type){
   var id = $('.id-getter').attr('id');
@@ -51,7 +78,7 @@ function changeRecipe(type){
     }
 
     //if dietary mode for this exists
-    if(dietIndex != -1) { 
+    if(dietIndex != -1) {
 
       var ingredients = recipe.ingredients[dietIndex].ingredients;
       console.log(ingredients)
