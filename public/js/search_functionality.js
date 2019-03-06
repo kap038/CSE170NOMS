@@ -72,7 +72,7 @@ function favoritesLogic(){
 	var input = (localStorage.getItem("favorites") || '[]'); //if null, init to []
 
 	//show back button
-	$('.backbutton').show();
+	$('.backbutton').css('visibility', 'visible');
 
 	//hide other buttons
 	$('.small-recipes').hide();
@@ -100,7 +100,7 @@ function handleForYou(e){
 	e.preventDefault();
 
 	//show back button
-	$('.backbutton').show();
+	$('.backbutton').css('visibility', 'visible');
 	//hide other buttons
 	$('.small-recipes').hide();
 	$('.search-container').hide();
@@ -131,7 +131,7 @@ function completedLogic() {
 	var input = (localStorage.getItem("completed") || '[]'); //if null, init to []
 
 	//show back button
-	$('.backbutton').show();
+	$('.backbutton').css('visibility', 'visible');
 	//hide other buttons
 	$('.small-recipes').hide();
 	$('.search-container').hide();
