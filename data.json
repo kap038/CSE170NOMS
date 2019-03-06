@@ -3,11 +3,11 @@
 		{ "name": "Scrambled Eggs",
 			"imageURL": "https://www.theflavorbender.com/wp-content/uploads/2018/08/Scrambled-Eggs-Featured-500x375.jpg",
 			"pictures":[
-				{"picture":"https://www.incredibleegg.org/wp-content/uploads/how-to-make-baked-scrambled-eggs-930x550.jpg"},
-				{"picture":"https://media1.popsugar-assets.com/files/thumbor/5r-Mhb-mQmR67JhzOlYjp20Hs20/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2016/12/14/983/n/1922195/31fba80a3e189e04_paula-deen-scrambled-eggs-first/i/Melt-1-tablespoon-butter-1-tablespoon-bacon-grease.jpg"},
-				{"picture":"https://toriavey.com/images/2014/06/IMG_0162.jpg"},
-				{"picture":"https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201452_12.jpg?itok=sEzruvF_"},
-				{"picture":"http://aucdn.ar-cdn.com/recipes/originals/17a47fa0-b5c9-426e-b239-575c2e687fce.jpg"}
+				"https://www.incredibleegg.org/wp-content/uploads/how-to-make-baked-scrambled-eggs-930x550.jpg",
+				"https://media1.popsugar-assets.com/files/thumbor/5r-Mhb-mQmR67JhzOlYjp20Hs20/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2016/12/14/983/n/1922195/31fba80a3e189e04_paula-deen-scrambled-eggs-first/i/Melt-1-tablespoon-butter-1-tablespoon-bacon-grease.jpg",
+				"https://toriavey.com/images/2014/06/IMG_0162.jpg",
+				"https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201452_12.jpg?itok=sEzruvF_",
+				"http://aucdn.ar-cdn.com/recipes/originals/17a47fa0-b5c9-426e-b239-575c2e687fce.jpg"
 			],
 			"id": "recipe1",
 			"difficulty": "easy",

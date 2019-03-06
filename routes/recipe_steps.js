@@ -35,7 +35,11 @@ exports.view = function(req, res){
   }
 
   //render pictures
-  var picture = recipe.pictures[step];
+  var picture = recipe.imageURL;
+  if(recipe.pictures){
+    picture = recipe.pictures[step] || recipe.imageURL;
+  }
+  console.log(picture)
 
   //don't render out of bounds instructions
   if(step <= recipe.instructions.length) {
