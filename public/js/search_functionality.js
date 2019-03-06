@@ -2,7 +2,7 @@
 'use strict';
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-	$('.backbutton').hide();
+	$('.backbutton').css('visibility', 'hidden');
 	initializePage();
 	//hide back button
 })
@@ -160,7 +160,7 @@ function handleSearch(e) {
 	e.preventDefault();
 
 	//show back button
-	$('.backbutton').show();
+	$('.backbutton').css('visibility', 'visible');
 	//hide other buttons
 	//$('.small-recipes').hide();
 	//$('.search-container').hide();

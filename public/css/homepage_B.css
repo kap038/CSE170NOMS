@@ -11,9 +11,8 @@
   width: 60px;
   position: relative;
   padding-top: 15px;
-  left: 2%;
+  
   float: left;
-  position: absolute;
 }
 
 
@@ -43,6 +42,7 @@
   max-height: 30%;
   max-width: 30%;
   height: 60px;
+  margin-right: 60px
 }
 
 .recipe-header {
