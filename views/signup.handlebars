@@ -13,32 +13,54 @@
         <div class="header">
             <h1>Sign Up with Noms</h1>
         </div>
-        <div class="content">
+
+				<div class = "content" id="recipe-tutorial">
+						<div class="container" id="recipe-container">
+							<label class= "top-label">Search for Recipes</label>
+							<button id="tutorial-1">Got it!</button>
+						</div>
+				</div>
+
+				<div class = "content" id="4u-tutorial">
+						<div class="container" id="4u-container">
+							<label class= "top-label">This page has all the recipes for your dietary restriction!</label>
+							<button id="tutorial-2">Got it!</button>
+						</div>
+				</div>
+
+				<div class = "content" id="fav-tutorial">
+						<div class="container" id="fav-container">
+							<label class= "top-label">Add a recipe to your favorites!</label>
+							<button id="tutorial-3">Got it!</button>
+						</div>
+				</div>
+
+				<div class = "content" id="complete-tutorial">
+						<div class="container" id="complete-container">
+							<label class= "top-label">Look at all the recipe's you've completed!</label>
+							<button id="tutorial-4">Start Now!</button>
+						</div>
+				</div>
 
 
-                    <div class="diet-container" id="restriction">
-                         <label class="top-label">Select Your Dietary Restriction:</label>
+        <div class="content" id="diet">
+            <div class="diet-container" id="restriction">
+                 <label class="top-label">Select Your Dietary Restriction:</label>
 
-												 <input type="radio" class="select-type" name="restriction" id="all">
-												 <label for="all" class="side-label">None</label>
+								 <input type="radio" class="select-type" name="restriction" id="all">
+								 <label for="all" class="side-label">None</label>
 
-                         <input type="radio"  class="select-type" name="restriction" id="nutfree">
-												 <label for="nutfree" class="side-label">Nut free</label>
+                 <input type="radio"  class="select-type" name="restriction" id="nutfree">
+								 <label for="nutfree" class="side-label">Nut free</label>
 
-												 <input type="radio"  class="select-type" name="restriction" id="vegan">
-												 <label for="vegan" class="side-label">Vegan</label>
+								 <input type="radio"  class="select-type" name="restriction" id="vegan">
+								 <label for="vegan" class="side-label">Vegan</label>
 
-                         <input type="radio"  class="select-type" name="restriction" id="glutenfree">
-												 <label for="glutenfree" class="side-label">Gluten Free</label>
-                    </div>
+                 <input type="radio"  class="select-type" name="restriction" id="glutenfree">
+								 <label for="glutenfree" class="side-label">Gluten Free</label>
+            </div>
 
-
-                    <div class="buttons" id="signup">
-												<a href="homepage">
-												<button>Sign up!</button>
-											</a>
-                    </div>
-
+						<button id="signup">Sign up!</button>
         </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
