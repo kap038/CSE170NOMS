@@ -470,10 +470,9 @@
 		{ "name": "Mini Cheesecakes",
 			"imageURL": "https://images.media-allrecipes.com/userphotos/720x405/4461315.jpg",
 			"pictures":[
-				{"picture": "https://66.media.tumblr.com/a83fba0429143b942f2294094139c61e/tumblr_pnzne3s5G01smv45oo5_1280.png",
-					"alt": [ {"name": "vegan", "picture": "https://66.media.tumblr.com/6c8b59fbece3050a8737a210d347d1f6/tumblr_pnzne3s5G01smv45oo6_1280.png"},
-							{ "name": "glutenfree", "picture": "https://66.media.tumblr.com/6c8b59fbece3050a8737a210d347d1f6/tumblr_pnzne3s5G01smv45oo6_1280.png"}
-				]},
+				"https://66.media.tumblr.com/a83fba0429143b942f2294094139c61e/tumblr_pnzne3s5G01smv45oo5_1280.png",
+				"https://66.media.tumblr.com/6c8b59fbece3050a8737a210d347d1f6/tumblr_pnzne3s5G01smv45oo6_1280.png",
+				"https://66.media.tumblr.com/6c8b59fbece3050a8737a210d347d1f6/tumblr_pnzne3s5G01smv45oo6_1280.png",
 				"https://hips.hearstapps.com/clv.h-cdn.co/assets/cm/15/09/54eb421d87607_-_basic-brownie-batter-recipe-clv1210-xl.jpg",
 				"http://dessertedplanet.com/wp-content/uploads/2011/08/IMG_4652.jpg"
 			],
