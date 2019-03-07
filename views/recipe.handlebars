@@ -30,13 +30,13 @@
 		</div>
 		<p>Time needed: {{recipe.time}}</p>
 		<div class="start">
-			<a id="start-button" href="{{recipe.id}}/normal/1"><button> Start </button></a>
+			<a id="start-button" href="{{recipe.id}}/normal/1"><button> Start Recipe </button></a>
 		</div>
 		<div class="lists">
 			<div class="ingredients-content">
 				<h3>Ingredients</h3>
 				<div class="dropdown">
-					<button class="dropbtn">Dietary Restrictions</button>
+					<button class="dropbtn">Change Ingredients</button>
 					<div id="myDropdown" class="dropdown-content">
 						{{#each alternatives}}
 						<a id="{{this}}" href="#">{{this}}</a>
@@ -58,7 +58,7 @@
 			</ol>
 		</div>
 		<div class="complete">
-			<button id="complete-button"> Recipe Completed! </button>
+			<button id="complete-button"> Add to My Completed </button>
 		</div>
 		</div>
 		{{#if viewAlt}}

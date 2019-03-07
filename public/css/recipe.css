@@ -35,13 +35,19 @@
 
 .start button {
   width: 100%;
-  border: 2px;
-  border-color: black;
-  border-style: solid;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 16px;
+  background-color: #aecbfc;
+  
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 2px 2px;
+    cursor: pointer;
+     box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.4), 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+     border-style: solid;
+     border-width: 1px;
+       border-color: #636363;
 }
 
 .steps-count {
@@ -51,4 +57,18 @@
 .favorites-button {
   position: relative;
   top: 20%;
+}
+
+#complete-button {
+  background-color: #FFB852;
+    border: none;
+    color: #636363;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+      box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.4), 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
 }
