@@ -62,6 +62,16 @@ body {
   justify-content: center;
 }
 
+button{
+  color: white;
+  background-color: #FFB852;
+	font-size: 100%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
 /* Dropdown button*/
 .dropdown button {
   background-color: #3498DB;
