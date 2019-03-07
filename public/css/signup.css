@@ -98,3 +98,26 @@ button
   font-weight: bold;
   padding: 1rem;
 }
+
+.small-label {
+  text-align: left;
+  font-weight: normal;
+  display: block;
+  position: relative;
+  margin: 6px 0;
+}
+
+img{
+  width: 120px;
+    max-height: 120px;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+}
+
+.imgcontainer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}

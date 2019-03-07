@@ -48,7 +48,7 @@ function handleTutorial3(e){
   $('#complete-tutorial').show();
 }
 
-function handleTutorial3(e){
+function handleTutorial4(e){
   e.preventDefault();
   window.location.href = "/homepage";
 }
