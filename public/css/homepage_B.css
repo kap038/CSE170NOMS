@@ -11,7 +11,7 @@
   width: 60px;
   position: relative;
   padding-top: 15px;
-  
+
   float: left;
 }
 
@@ -63,6 +63,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  object-fit: cover;
   padding-right: 20px;
 }
 
@@ -101,7 +102,6 @@
 .available-recipes {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 
@@ -154,10 +154,11 @@
   background-color: #aecbfc;
   z-index: 1;
   display: none;
+  padding-bottom: 20px;
 }
 
 .filter-tooltip show{
-  
+
   display: visible;
 }
 
@@ -169,6 +170,8 @@
 .tooltip-rows{
   display: flex;
   flex-direction: row;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .filter-button-text {
