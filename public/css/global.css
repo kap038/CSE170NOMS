@@ -15,10 +15,6 @@ body {
   background-color: #FFB852;
 }
 
-.header,.header-back h1 {
-  color: white;
-
-}
 .favorites-button{
       margin: 10px;
       margin-left: 0px;

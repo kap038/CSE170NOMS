@@ -9,59 +9,59 @@
 	<link href="/css/global.css" rel="stylesheet">
 </head>
 <body>
-	<div class="header" style="margin: 0px 0px 0px 0px;">
+	<div class="header-back" style="margin: 0px 0px 0px 0px;">
 		<h1>Profile</h1>
 	</div>
 
 	<div class="main" style="height: 100%;">
-	<div class="accountinfo">
-		<div id="facebookPhoto" class="profile">
-			<img id="photo" class='img-responsive' src="http://hci.stanford.edu/courses/cs547/Resources/Pictures/klemmer_grad.jpg" />
-		</div>
+		<div class="accountinfo">
+			<div id="facebookPhoto" class="profile">
+				<img id="photo" class='img-responsive' src="http://hci.stanford.edu/courses/cs547/Resources/Pictures/klemmer_grad.jpg" />
+			</div>
 
-		<div class="accounttext">
-			<h1 id="name">Bob</h1>
-		</div>
-	</div>
-
-	<div class="profilebuttons">
-		{{#if viewAlt}}
-			<a href="/homepage_B?type=completed" id="completed">
-		{{else}}
-			<a href="/homepage?type=completed" id="completed">
-		{{/if}}
-			<p>Completed Recipes</p>
-		</a>
-	</div>
-
-	<div class="profilebuttons">
-		{{#if viewAlt}}
-			<a href="/homepage_B?type=completed" id="favorites">
-		{{else}}
-			<a href="/homepage?type=completed" id="favorites">
-		{{/if}}
-			<p>Favorite Recipes</p>
-		</a>
-	</div>
-
-	<div class="profilebuttons">
-		<div class="dropdown-settings">
-			<button id="dietary" class="dropbtn">Dietary Restrictions</button>
-			<div id="dietary" class="dropdown-content">
-				<a id ="normal" href="#">Normal</a>
-				<a id ="vegan" href="#">Vegan</a>
-				<a id ="nutfree" href="#">Nut free</a>
-				<a id ="glutenfree" href="#">Gluten Free</a>
+			<div class="accounttext">
+				<h1 id="name">Bob</h1>
 			</div>
 		</div>
-	</div>
+		<div class="buttoncontainer">
+			<div class="profilebuttons">
+				{{#if viewAlt}}
+					<a href="/homepage_B?type=completed" id="completed">
+				{{else}}
+					<a href="/homepage?type=completed" id="completed">
+				{{/if}}
+					<button>Completed Recipes</button>
+				</a>
+			</div>
 
-	<div class="sign-out">
-		<a href="/">
-			<p>Sign out</p>
-		</a>
-	</div>
-</div>
+			<div class="profilebuttons">
+				{{#if viewAlt}}
+					<a href="/homepage_B?type=completed" id="favorites">
+				{{else}}
+					<a href="/homepage?type=completed" id="favorites">
+				{{/if}}
+					<button>Favorite Recipes</button>
+				</a>
+			</div>
+
+			<div class="profilebuttons">
+				<div class="dropdown-settings">
+					<button id="dietary" class="dropbtn">Dietary Restrictions</button>
+					<div id="dietary" class="dropdown-content">
+						<a id ="normal" href="#">Normal</a>
+						<a id ="vegan" href="#">Vegan</a>
+						<a id ="nutfree" href="#">Nut free</a>
+						<a id ="glutenfree" href="#">Gluten Free</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="sign-out">
+				<a href="/">
+					<button>Sign out</button>
+				</a>
+			</div>
+		</div>
 
 	{{#if viewAlt}}
 		{{> footer_B}}
