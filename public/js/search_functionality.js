@@ -25,22 +25,35 @@ function handleFilterButton(e){
 
 function handleFilter(e){
 	e.preventDefault();
+	var input = $('input#searchbox').val();
+	//case insensitive
+	input = input.toLowerCase();
 	var option1 = $("input[name='radio']:checked").attr('id');
 	var option2 = $("input[name='radio2']:checked").attr('id');
+	console.log(input)
 
 	var url = "/json/"
 	$.get(url, function(result) {
 		//get overlap in matches
+		if(input == null){
+  			input = "normal"
+  		}
+  		if(option2 == "all"){
+  			option2 = "normal"
+  		}
   		var matches1 = getMatches(option1, result);
   		var matches2 = getMatches(option2, result);
+  		var searchMatches = getMatches(input, result);
   		var matches = [];
 
-  		if(option2 == "all"){
-  			matches = matches1;
-  		} else {
-  			//matches = overlap of the two arrays
-  			matches = matches1.filter(value => -1 !== matches2.indexOf(value));
-  		}
+  	
+  	
+  		console.log(matches2)
+	
+		//matches = overlap of the two arrays
+		matches = matches1.filter(value => -1 !== matches2.indexOf(value));
+		matches = matches.filter(value => -1 !== searchMatches.indexOf(value));
+	
   		console.log(option2)
   		//add any recipes that match the user's keyword
  		displayList(matches)
